@@ -15,16 +15,16 @@ NexaAffiliates is a portfolio simulation designed to demonstrate practical workf
 
 The project represents a fictional US-market performance marketing environment focused on:
 
-- CPA marketing
-- CPL marketing
-- Affiliate management
-- Offer management
-- Advertiser coordination
-- Campaign management
-- Performance monitoring
-- Compliance review
-- Affiliate communications
-- Reporting and analytics
+- CPA Marketing
+- CPL Marketing
+- Affiliate Management
+- Offer Management
+- Advertiser Coordination
+- Campaign Management
+- Performance Monitoring
+- Compliance Review
+- Affiliate Communications
+- Reporting and Analytics
 
 **Important:** All companies, affiliates, advertisers, campaigns, performance figures, revenue values, and results in this project are fictional demo data created for portfolio purposes.
 
@@ -54,36 +54,13 @@ The main objectives of NexaAffiliates are to demonstrate the ability to:
 
 Provides a centralized overview of the fictional affiliate operation.
 
-Includes:
-
-- Active offers
-- Active affiliates
-- Live campaigns
-- Compliance reviews
-- Recent activities
-- Campaign performance summaries
-
 ### Offers
 
-Demonstrates offer management workflows including:
-
-- Offer ID
-- Offer name
-- Vertical
-- Conversion model
-- Payout
-- Traffic source
-- Status
+Demonstrates offer management including offer ID, vertical, conversion model, payout, traffic source, and status.
 
 ### Affiliates
 
-Demonstrates affiliate account management concepts including:
-
-- Affiliate profiles
-- Traffic sources
-- Account status
-- Vertical focus
-- Performance tracking
+Demonstrates affiliate account management, traffic sources, vertical focus, account status, and performance tracking.
 
 ### Advertisers
 
@@ -91,51 +68,23 @@ Demonstrates advertiser account organization and campaign relationships.
 
 ### Campaigns
 
-Tracks fictional campaign operations including:
-
-- Advertiser
-- Affiliate
-- Vertical
-- Traffic source
-- Campaign status
+Tracks fictional campaign operations including advertiser, affiliate, vertical, traffic source, and campaign status.
 
 ### Analytics
 
-Provides fictional performance data for:
-
-- Clicks
-- Conversions
-- Revenue
-- Conversion rate
-- EPC
-- Traffic sources
+Provides fictional performance data including clicks, conversions, revenue, conversion rate, EPC, and traffic sources.
 
 ### Compliance
 
-Demonstrates a basic compliance workflow using:
-
-- Risk levels
-- Review checks
-- Passed checks
-- Review status
-- Last review date
+Demonstrates risk levels, review checks, passed checks, review status, and review dates.
 
 ### Communications
 
-Demonstrates account communication tracking between:
-
-- Affiliates
-- Advertisers
-- Internal teams
+Demonstrates account communication tracking between affiliates, advertisers, and internal teams.
 
 ### Reports
 
-Provides fictional operational reports covering:
-
-- Performance
-- Accounts
-- Campaigns
-- Compliance
+Provides fictional operational reports covering performance, accounts, campaigns, and compliance.
 
 ### Case Study
 
@@ -149,9 +98,178 @@ Contains project documentation covering the system structure, workflows, methodo
 
 ## 🧮 Analytics Methodology
 
-The analytics module uses simple performance marketing calculations.
-
 ### Conversion Rate
 
-```text
 Conversion Rate = Conversions ÷ Clicks × 100
+
+### EPC
+
+EPC = Revenue ÷ Clicks
+
+### Fictional Example
+
+Clicks: 8,420
+
+Conversions: 286
+
+Revenue: $5,148.00
+
+The displayed metrics are fictional demo values created specifically for this portfolio simulation.
+
+---
+
+## 🛠️ Technology Stack
+
+| Technology | Purpose |
+|---|---|
+| HTML5 | Page structure |
+| CSS3 | Styling and responsive layout |
+| Vanilla JavaScript | Interactions and data rendering |
+| Font Awesome | Interface icons |
+| Google Fonts | Typography |
+| GitHub Pages | Static website hosting |
+
+---
+
+## 📊 Portfolio Skills Demonstrated
+
+- Affiliate Account Management
+- Performance Marketing
+- CPA / CPL Campaigns
+- Offer Management
+- Affiliate Relationship Management
+- Advertiser Coordination
+- Campaign Monitoring
+- Performance Analysis
+- Conversion Rate Analysis
+- EPC Analysis
+- Traffic Source Monitoring
+- Compliance Tracking
+- Reporting
+- Data Organization
+- Front-End Development
+- Responsive UI Design
+- GitHub Pages Deployment
+
+---
+
+## 🔍 Testing
+
+The project includes testing of:
+
+- Dashboard navigation
+- Offer management
+- Affiliate interface
+- Advertiser interface
+- Campaign interface
+- Analytics interface
+- Compliance interface
+- Communications interface
+- Reports
+- Case Study
+- Documentation
+- Responsive layouts
+- GitHub Pages deployment
+- Relative asset paths
+
+---
+
+## 🚀 Deployment
+
+The project is deployed as a static website using GitHub Pages.
+
+**Branch:** main
+
+**Directory:** / (root)
+
+**Live URL:**  
+https://krishnasahu012.github.io/NexaAffiliates/
+
+---
+
+## 📚 Documentation
+
+Detailed documentation is available inside the `docs/` directory.
+
+Documentation includes:
+
+- Project Overview
+- Architecture
+- Affiliate Management
+- Offer Management
+- Campaign Management
+- Compliance Workflow
+- Analytics Methodology
+- Testing
+- Deployment
+
+---
+
+## 📸 Project Screenshots
+
+### Dashboard
+
+![NexaAffiliates Dashboard](screenshots/dashboard.png)
+
+### Offers
+
+![NexaAffiliates Offers](screenshots/offers.png)
+
+### Affiliates
+
+![NexaAffiliates Affiliates](screenshots/affiliates.png)
+
+### Campaigns
+
+![NexaAffiliates Campaigns](screenshots/campaigns.png)
+
+### Analytics
+
+![NexaAffiliates Analytics](screenshots/analytics.png)
+
+---
+
+## ⚠️ Portfolio Disclaimer
+
+NexaAffiliates is a fictional portfolio simulation.
+
+It does not represent:
+
+- Real employment experience
+- Real affiliate network operations
+- Real advertisers
+- Real affiliates
+- Real client accounts
+- Real campaign results
+- Real revenue
+
+All organizations, names, campaigns, metrics, and performance information are fictional and created for demonstration purposes.
+
+---
+
+## 👤 Portfolio Project
+
+**Project:** NexaAffiliates
+
+**Category:** Affiliate Account Manager Portfolio Simulation
+
+**Market:** US
+
+**Focus:** CPA / CPL / Performance Marketing
+
+**Platform:** GitHub Pages
+
+---
+
+## ⭐ Project Highlights
+
+- Professional affiliate management dashboard
+- Modular front-end architecture
+- Responsive design
+- Fictional performance marketing dataset
+- Campaign analytics
+- Compliance workflow
+- Communication tracking
+- Reporting module
+- Documentation system
+- GitHub Pages deployment
