@@ -155,3 +155,21 @@ The analytics module uses simple performance marketing calculations.
 
 ```text
 Conversion Rate = Conversions ÷ Clicks × 100
+---
+
+## 📸 Project Screenshots
+
+### Dashboard
+![Dashboard](screenshots/dashboard.png)
+
+### Offers
+![Offers](screenshots/offers.png)
+
+### Affiliates
+![Affiliates](screenshots/affiliates.png)
+
+### Campaigns
+![Campaigns](screenshots/campaigns.png)
+
+### Analytics
+![Analytics](screenshots/analytics.png)
