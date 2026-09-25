@@ -1,0 +1,1076 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="NexaAffiliates - Advertiser Management"
+    >
+
+    <meta
+        name="author"
+        content="NexaAffiliates Portfolio Simulation"
+    >
+
+    <title>NexaAffiliates - Advertisers</title>
+
+
+    <!-- Google Fonts -->
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+
+    <!-- Font Awesome -->
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+
+    <!-- NexaAffiliates CSS -->
+
+    <link rel="stylesheet" href="../assets/css/variables.css">
+    <link rel="stylesheet" href="../assets/css/base.css">
+    <link rel="stylesheet" href="../assets/css/layout.css">
+    <link rel="stylesheet" href="../assets/css/components.css">
+    <link rel="stylesheet" href="../assets/css/dashboard.css">
+    <link rel="stylesheet" href="../assets/css/tables.css">
+    <link rel="stylesheet" href="../assets/css/forms.css">
+    <link rel="stylesheet" href="../assets/css/responsive.css">
+
+</head>
+
+
+<body>
+
+
+<div class="app-layout">
+
+
+    <!-- =========================================
+         SIDEBAR
+    ========================================== -->
+
+    <aside class="sidebar">
+
+
+        <div class="sidebar-brand">
+
+            <div class="icon-box">
+
+                <i class="fa-solid fa-chart-line"></i>
+
+            </div>
+
+
+            <div>
+
+                <strong>
+                    NexaAffiliates
+                </strong>
+
+                <small>
+                    Account Manager
+                </small>
+
+            </div>
+
+        </div>
+
+
+
+        <nav class="sidebar-nav">
+
+            <ul>
+
+
+                <li>
+
+                    <a href="../index.html">
+
+                        <i class="fa-solid fa-gauge-high"></i>
+
+                        <span>
+                            Dashboard
+                        </span>
+
+                    </a>
+
+                </li>
+
+
+                <li>
+
+                    <a href="./offers.html">
+
+                        <i class="fa-solid fa-bullseye"></i>
+
+                        <span>
+                            Offers
+                        </span>
+
+                    </a>
+
+                </li>
+
+
+                <li>
+
+                    <a href="./affiliates.html">
+
+                        <i class="fa-solid fa-users"></i>
+
+                        <span>
+                            Affiliates
+                        </span>
+
+                    </a>
+
+                </li>
+
+
+                <li>
+
+                    <a
+                        href="./advertisers.html"
+                        class="active"
+                    >
+
+                        <i class="fa-solid fa-building"></i>
+
+                        <span>
+                            Advertisers
+                        </span>
+
+                    </a>
+
+                </li>
+
+
+                <li>
+
+                    <a href="./campaigns.html">
+
+                        <i class="fa-solid fa-rectangle-ad"></i>
+
+                        <span>
+                            Campaigns
+                        </span>
+
+                    </a>
+
+                </li>
+
+
+                <li>
+
+                    <a href="./analytics.html">
+
+                        <i class="fa-solid fa-chart-column"></i>
+
+                        <span>
+                            Performance
+                        </span>
+
+                    </a>
+
+                </li>
+
+
+                <li>
+
+                    <a href="./compliance.html">
+
+                        <i class="fa-solid fa-shield-halved"></i>
+
+                        <span>
+                            Compliance
+                        </span>
+
+                    </a>
+
+                </li>
+
+
+                <li>
+
+                    <a href="./communications.html">
+
+                        <i class="fa-solid fa-comments"></i>
+
+                        <span>
+                            Communications
+                        </span>
+
+                    </a>
+
+                </li>
+
+
+                <li>
+
+                    <a href="./reports.html">
+
+                        <i class="fa-solid fa-file-lines"></i>
+
+                        <span>
+                            Reports
+                        </span>
+
+                    </a>
+
+                </li>
+
+
+                <li>
+
+                    <a href="./case-study.html">
+
+                        <i class="fa-solid fa-briefcase"></i>
+
+                        <span>
+                            Case Study
+                        </span>
+
+                    </a>
+
+                </li>
+
+
+                <li>
+
+                    <a href="./documentation.html">
+
+                        <i class="fa-solid fa-book"></i>
+
+                        <span>
+                            Documentation
+                        </span>
+
+                    </a>
+
+                </li>
+
+
+            </ul>
+
+        </nav>
+
+
+
+        <div class="sidebar-footer">
+
+            <div class="simulation-label">
+
+                <i class="fa-solid fa-circle-info"></i>
+
+                <span>
+                    Portfolio Simulation
+                </span>
+
+            </div>
+
+        </div>
+
+
+    </aside>
+
+
+
+    <!-- =========================================
+         MAIN AREA
+    ========================================== -->
+
+    <div class="main-area">
+
+
+        <!-- HEADER -->
+
+        <header class="header">
+
+            <div>
+
+                <h1 class="page-title">
+                    Advertisers
+                </h1>
+
+                <p class="page-description">
+                    Manage advertiser relationships and offer inventory
+                </p>
+
+            </div>
+
+
+            <div class="header-actions">
+
+                <button
+                    class="btn btn-primary"
+                    type="button"
+                    id="addAdvertiserButton"
+                >
+
+                    <i class="fa-solid fa-building-circle-plus"></i>
+
+                    Add Advertiser
+
+                </button>
+
+            </div>
+
+        </header>
+
+
+
+        <!-- =========================================
+             MAIN CONTENT
+        ========================================== -->
+
+        <main class="main-content">
+
+
+            <!-- PAGE HEADER -->
+
+            <section class="page-header">
+
+                <div>
+
+                    <h2 class="page-title">
+                        Advertiser Management
+                    </h2>
+
+                    <p class="page-description">
+                        Monitor advertiser accounts, verticals,
+                        offers and campaign relationships.
+                    </p>
+
+                </div>
+
+
+                <div class="badge badge-info">
+
+                    <i class="fa-solid fa-flask"></i>
+
+                    Demo Portfolio
+
+                </div>
+
+            </section>
+
+
+
+            <!-- =========================================
+                 FILTERS
+            ========================================== -->
+
+            <section class="content-section">
+
+                <div class="card">
+
+
+                    <div class="card-header">
+
+                        <div>
+
+                            <h2 class="card-title">
+                                Search &amp; Filters
+                            </h2>
+
+                            <p class="card-subtitle">
+                                Find advertisers by account details
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="grid grid-4">
+
+
+                        <!-- SEARCH -->
+
+                        <div class="form-group">
+
+                            <label
+                                class="form-label"
+                                for="advertiserSearch"
+                            >
+                                Search
+                            </label>
+
+
+                            <div class="search-box">
+
+                                <i class="fa-solid fa-magnifying-glass"></i>
+
+                                <input
+                                    type="text"
+                                    id="advertiserSearch"
+                                    placeholder="Search advertisers..."
+                                    autocomplete="off"
+                                >
+
+                            </div>
+
+                        </div>
+
+
+
+                        <!-- STATUS -->
+
+                        <div class="form-group">
+
+                            <label
+                                class="form-label"
+                                for="advertiserStatusFilter"
+                            >
+                                Status
+                            </label>
+
+
+                            <select
+                                class="form-select"
+                                id="advertiserStatusFilter"
+                            >
+
+                                <option value="all">
+                                    All Statuses
+                                </option>
+
+                                <option value="Active">
+                                    Active
+                                </option>
+
+                                <option value="Onboarding">
+                                    Onboarding
+                                </option>
+
+                                <option value="Paused">
+                                    Paused
+                                </option>
+
+                                <option value="Review">
+                                    Review
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+
+                        <!-- VERTICAL -->
+
+                        <div class="form-group">
+
+                            <label
+                                class="form-label"
+                                for="advertiserVerticalFilter"
+                            >
+                                Vertical
+                            </label>
+
+
+                            <select
+                                class="form-select"
+                                id="advertiserVerticalFilter"
+                            >
+
+                                <option value="all">
+                                    All Verticals
+                                </option>
+
+                                <option value="Finance">
+                                    Finance
+                                </option>
+
+                                <option value="Insurance">
+                                    Insurance
+                                </option>
+
+                                <option value="Home Services">
+                                    Home Services
+                                </option>
+
+                                <option value="SaaS">
+                                    SaaS
+                                </option>
+
+                                <option value="Education">
+                                    Education
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+
+                        <!-- ACCOUNT TYPE -->
+
+                        <div class="form-group">
+
+                            <label
+                                class="form-label"
+                                for="advertiserTypeFilter"
+                            >
+                                Account Type
+                            </label>
+
+
+                            <select
+                                class="form-select"
+                                id="advertiserTypeFilter"
+                            >
+
+                                <option value="all">
+                                    All Account Types
+                                </option>
+
+                                <option value="Direct">
+                                    Direct
+                                </option>
+
+                                <option value="Agency">
+                                    Agency
+                                </option>
+
+                                <option value="Brand">
+                                    Brand
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                    </div>
+
+
+
+                    <div class="form-actions">
+
+                        <button
+                            class="btn btn-secondary"
+                            type="button"
+                            id="resetAdvertiserFilters"
+                        >
+
+                            <i class="fa-solid fa-rotate-left"></i>
+
+                            Reset Filters
+
+                        </button>
+
+                    </div>
+
+
+                </div>
+
+            </section>
+
+
+
+            <!-- =========================================
+                 KPI SUMMARY
+            ========================================== -->
+
+            <section class="content-section">
+
+
+                <div class="dashboard-kpi-grid">
+
+
+                    <!-- TOTAL -->
+
+                    <div class="kpi-card">
+
+                        <div class="kpi-content">
+
+                            <div class="kpi-label">
+                                Total Advertisers
+                            </div>
+
+                            <div
+                                class="kpi-value"
+                                id="totalAdvertisersCount"
+                            >
+                                0
+                            </div>
+
+                            <div class="kpi-change neutral">
+                                Demo portfolio
+                            </div>
+
+                        </div>
+
+
+                        <div class="kpi-icon">
+
+                            <i class="fa-solid fa-building"></i>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- ACTIVE -->
+
+                    <div class="kpi-card">
+
+                        <div class="kpi-content">
+
+                            <div class="kpi-label">
+                                Active Advertisers
+                            </div>
+
+                            <div
+                                class="kpi-value"
+                                id="activeAdvertisersCount"
+                            >
+                                0
+                            </div>
+
+                            <div class="kpi-change positive">
+                                Active accounts
+                            </div>
+
+                        </div>
+
+
+                        <div class="kpi-icon">
+
+                            <i class="fa-solid fa-circle-check"></i>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- OFFERS -->
+
+                    <div class="kpi-card">
+
+                        <div class="kpi-content">
+
+                            <div class="kpi-label">
+                                Active Offers
+                            </div>
+
+                            <div
+                                class="kpi-value"
+                                id="advertiserOffersCount"
+                            >
+                                0
+                            </div>
+
+                            <div class="kpi-change neutral">
+                                Advertiser inventory
+                            </div>
+
+                        </div>
+
+
+                        <div class="kpi-icon">
+
+                            <i class="fa-solid fa-bullseye"></i>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- CAMPAIGNS -->
+
+                    <div class="kpi-card">
+
+                        <div class="kpi-content">
+
+                            <div class="kpi-label">
+                                Live Campaigns
+                            </div>
+
+                            <div
+                                class="kpi-value"
+                                id="advertiserCampaignsCount"
+                            >
+                                0
+                            </div>
+
+                            <div class="kpi-change neutral">
+                                Campaign relationships
+                            </div>
+
+                        </div>
+
+
+                        <div class="kpi-icon">
+
+                            <i class="fa-solid fa-rectangle-ad"></i>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+
+            </section>
+
+
+
+            <!-- =========================================
+                 ADVERTISER TABLE
+            ========================================== -->
+
+            <section class="content-section">
+
+
+                <div class="card">
+
+
+                    <div class="card-header">
+
+                        <div>
+
+                            <h2 class="card-title">
+                                Advertiser Accounts
+                            </h2>
+
+                            <p class="card-subtitle">
+                                Advertiser profiles and account activity
+                            </p>
+
+                        </div>
+
+
+                        <span
+                            class="badge badge-neutral"
+                            id="advertiserResultCount"
+                        >
+                            0 advertisers
+                        </span>
+
+                    </div>
+
+
+
+                    <div class="table-wrapper">
+
+
+                        <table class="data-table">
+
+
+                            <thead>
+
+                                <tr>
+
+                                    <th>
+                                        Advertiser
+                                    </th>
+
+                                    <th>
+                                        Type
+                                    </th>
+
+                                    <th>
+                                        Vertical
+                                    </th>
+
+                                    <th>
+                                        Offers
+                                    </th>
+
+                                    <th>
+                                        Campaigns
+                                    </th>
+
+                                    <th>
+                                        Status
+                                    </th>
+
+                                    <th>
+                                        Action
+                                    </th>
+
+                                </tr>
+
+                            </thead>
+
+
+                            <tbody id="advertiserTableBody">
+
+                                <!-- JavaScript renders advertisers here -->
+
+                            </tbody>
+
+
+                        </table>
+
+
+                    </div>
+
+
+                </div>
+
+
+            </section>
+
+
+
+            <!-- =========================================
+                 ACCOUNT MANAGEMENT
+            ========================================== -->
+
+            <section class="content-section">
+
+
+                <div class="grid grid-3">
+
+
+                    <!-- RELATIONSHIP -->
+
+                    <div class="card">
+
+                        <div class="card-header">
+
+                            <div>
+
+                                <h3 class="card-title">
+                                    Account Relationships
+                                </h3>
+
+                                <p class="card-subtitle">
+                                    Partner communication
+                                </p>
+
+                            </div>
+
+
+                            <div class="icon-box">
+
+                                <i class="fa-solid fa-handshake"></i>
+
+                            </div>
+
+                        </div>
+
+
+                        <p>
+                            Demonstrates advertiser relationship
+                            management, account coordination and
+                            communication workflows.
+                        </p>
+
+                    </div>
+
+
+
+                    <!-- OFFER MANAGEMENT -->
+
+                    <div class="card">
+
+                        <div class="card-header">
+
+                            <div>
+
+                                <h3 class="card-title">
+                                    Offer Inventory
+                                </h3>
+
+                                <p class="card-subtitle">
+                                    CPA &amp; CPL opportunities
+                                </p>
+
+                            </div>
+
+
+                            <div class="icon-box">
+
+                                <i class="fa-solid fa-layer-group"></i>
+
+                            </div>
+
+                        </div>
+
+
+                        <p>
+                            Advertiser accounts can be connected to
+                            fictional CPA and CPL offers for
+                            portfolio demonstration.
+                        </p>
+
+                    </div>
+
+
+
+                    <!-- CAMPAIGN MANAGEMENT -->
+
+                    <div class="card">
+
+                        <div class="card-header">
+
+                            <div>
+
+                                <h3 class="card-title">
+                                    Campaign Coordination
+                                </h3>
+
+                                <p class="card-subtitle">
+                                    Performance operations
+                                </p>
+
+                            </div>
+
+
+                            <div class="icon-box">
+
+                                <i class="fa-solid fa-chart-line"></i>
+
+                            </div>
+
+                        </div>
+
+
+                        <p>
+                            Campaign relationships demonstrate
+                            monitoring, optimization and advertiser
+                            account coordination.
+                        </p>
+
+                    </div>
+
+
+                </div>
+
+
+            </section>
+
+
+
+            <!-- =========================================
+                 WORKFLOW NOTICE
+            ========================================== -->
+
+            <section class="content-section">
+
+
+                <div class="alert alert-info">
+
+                    <i class="fa-solid fa-circle-info"></i>
+
+
+                    <div>
+
+                        <strong>
+                            Advertiser Account Workflow
+                        </strong>
+
+
+                        <p>
+                            The advertiser module demonstrates account
+                            onboarding, relationship management,
+                            offer inventory coordination and campaign
+                            operations using fictional portfolio data.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+            </section>
+
+
+
+            <!-- =========================================
+                 SIMULATION NOTICE
+            ========================================== -->
+
+            <section class="content-section">
+
+
+                <div class="simulation-notice">
+
+
+                    <div class="simulation-notice-icon">
+
+                        <i class="fa-solid fa-flask"></i>
+
+                    </div>
+
+
+                    <div>
+
+                        <h3 class="simulation-notice-title">
+                            Portfolio Simulation
+                        </h3>
+
+
+                        <p class="simulation-notice-text">
+                            NexaAffiliates is a fictional portfolio
+                            simulation. All advertiser names, IDs,
+                            account types, offers, campaigns, statuses
+                            and operational information shown on this
+                            page are fictional demonstration data.
+                        </p>
+
+                    </div>
+
+
+                </div>
+
+
+            </section>
+
+
+        </main>
+
+
+    </div>
+
+
+</div>
+
+
+
+<!-- =========================================
+     JAVASCRIPT
+========================================== -->
+
+<script src="../assets/js/app.js"></script>
+
+<script src="../assets/js/advertisers.js"></script>
+
+
+</body>
+
+</html>

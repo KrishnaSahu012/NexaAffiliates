@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="NexaAffiliates - Offer Management"
+    >
+
+    <meta
+        name="author"
+        content="NexaAffiliates Portfolio Simulation"
+    >
+
+    <title>NexaAffiliates - Offers</title>
+
+
+    <!-- Google Fonts -->
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+
+    <!-- Font Awesome -->
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+
+    <!-- NexaAffiliates CSS -->
+
+    <link rel="stylesheet" href="../assets/css/variables.css">
+    <link rel="stylesheet" href="../assets/css/base.css">
+    <link rel="stylesheet" href="../assets/css/layout.css">
+    <link rel="stylesheet" href="../assets/css/components.css">
+    <link rel="stylesheet" href="../assets/css/dashboard.css">
+    <link rel="stylesheet" href="../assets/css/tables.css">
+    <link rel="stylesheet" href="../assets/css/forms.css">
+    <link rel="stylesheet" href="../assets/css/responsive.css">
+
+</head>
+
+
+<body>
+
+
+<div class="app-layout">
+
+
+    <!-- =================================
+         SIDEBAR
+    ================================== -->
+
+    <aside class="sidebar">
+
+        <div class="sidebar-brand">
+
+            <div class="icon-box">
+                <i class="fa-solid fa-chart-line"></i>
+            </div>
+
+            <div>
+
+                <strong>NexaAffiliates</strong>
+
+                <small>
+                    Account Manager
+                </small>
+
+            </div>
+
+        </div>
+
+
+        <nav class="sidebar-nav">
+
+            <ul>
+
+                <li>
+                    <a href="../index.html">
+                        <i class="fa-solid fa-gauge-high"></i>
+                        <span>Dashboard</span>
+                    </a>
+                </li>
+
+
+                <li>
+                    <a
+                        href="./offers.html"
+                        class="active"
+                    >
+                        <i class="fa-solid fa-bullseye"></i>
+                        <span>Offers</span>
+                    </a>
+                </li>
+
+
+                <li>
+                    <a href="./affiliates.html">
+                        <i class="fa-solid fa-users"></i>
+                        <span>Affiliates</span>
+                    </a>
+                </li>
+
+
+                <li>
+                    <a href="./advertisers.html">
+                        <i class="fa-solid fa-building"></i>
+                        <span>Advertisers</span>
+                    </a>
+                </li>
+
+
+                <li>
+                    <a href="./campaigns.html">
+                        <i class="fa-solid fa-rectangle-ad"></i>
+                        <span>Campaigns</span>
+                    </a>
+                </li>
+
+
+                <li>
+                    <a href="./analytics.html">
+                        <i class="fa-solid fa-chart-column"></i>
+                        <span>Performance</span>
+                    </a>
+                </li>
+
+
+                <li>
+                    <a href="./compliance.html">
+                        <i class="fa-solid fa-shield-halved"></i>
+                        <span>Compliance</span>
+                    </a>
+                </li>
+
+
+                <li>
+                    <a href="./communications.html">
+                        <i class="fa-solid fa-comments"></i>
+                        <span>Communications</span>
+                    </a>
+                </li>
+
+
+                <li>
+                    <a href="./reports.html">
+                        <i class="fa-solid fa-file-lines"></i>
+                        <span>Reports</span>
+                    </a>
+                </li>
+
+
+                <li>
+                    <a href="./case-study.html">
+                        <i class="fa-solid fa-briefcase"></i>
+                        <span>Case Study</span>
+                    </a>
+                </li>
+
+
+                <li>
+                    <a href="./documentation.html">
+                        <i class="fa-solid fa-book"></i>
+                        <span>Documentation</span>
+                    </a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+
+        <div class="sidebar-footer">
+
+            <div class="simulation-label">
+
+                <i class="fa-solid fa-circle-info"></i>
+
+                <span>
+                    Portfolio Simulation
+                </span>
+
+            </div>
+
+        </div>
+
+    </aside>
+
+
+
+    <!-- =================================
+         MAIN AREA
+    ================================== -->
+
+    <div class="main-area">
+
+
+        <!-- HEADER -->
+
+        <header class="header">
+
+            <div>
+
+                <h1 class="page-title">
+                    Offers
+                </h1>
+
+                <p class="page-description">
+                    Manage affiliate offers and promotion terms
+                </p>
+
+            </div>
+
+
+            <div class="header-actions">
+
+                <button
+                    class="btn btn-primary"
+                    type="button"
+                    id="addOfferButton"
+                >
+
+                    <i class="fa-solid fa-plus"></i>
+
+                    Add Offer
+
+                </button>
+
+            </div>
+
+        </header>
+
+
+
+        <!-- =================================
+             MAIN CONTENT
+        ================================== -->
+
+        <main class="main-content">
+
+
+            <!-- PAGE HEADER -->
+
+            <section class="page-header">
+
+                <div>
+
+                    <h2 class="page-title">
+                        Offer Management
+                    </h2>
+
+                    <p class="page-description">
+                        Review available CPA and CPL offers,
+                        payouts, verticals and traffic requirements.
+                    </p>
+
+                </div>
+
+
+                <div class="badge badge-info">
+
+                    <i class="fa-solid fa-flask"></i>
+
+                    Demo Portfolio
+
+                </div>
+
+            </section>
+
+
+
+            <!-- =================================
+                 FILTER CARD
+            ================================== -->
+
+            <section class="content-section">
+
+                <div class="card">
+
+                    <div class="card-header">
+
+                        <div>
+
+                            <h2 class="card-title">
+                                Search &amp; Filters
+                            </h2>
+
+                            <p class="card-subtitle">
+                                Find offers by name, vertical or status
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="filter-grid">
+
+
+                        <!-- SEARCH -->
+
+                        <div class="filter-field">
+
+                            <label
+                                class="form-label"
+                                for="offerSearch"
+                            >
+                                Search
+                            </label>
+
+                            <div class="search-box">
+
+                                <i class="fa-solid fa-magnifying-glass"></i>
+
+                                <input
+                                    type="text"
+                                    placeholder="Search offers..."
+                                    id="offerSearch"
+                                >
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- VERTICAL -->
+
+                        <div class="filter-field">
+
+                            <label
+                                class="form-label"
+                                for="verticalFilter"
+                            >
+                                Vertical
+                            </label>
+
+                            <select
+                                class="form-select"
+                                id="verticalFilter"
+                            >
+
+                                <option value="all">
+                                    All Verticals
+                                </option>
+
+                                <option value="finance">
+                                    Finance
+                                </option>
+
+                                <option value="insurance">
+                                    Insurance
+                                </option>
+
+                                <option value="sweepstakes">
+                                    Sweepstakes
+                                </option>
+
+                                <option value="home">
+                                    Home Services
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <!-- MODEL -->
+
+                        <div class="filter-field">
+
+                            <label
+                                class="form-label"
+                                for="modelFilter"
+                            >
+                                Model
+                            </label>
+
+                            <select
+                                class="form-select"
+                                id="modelFilter"
+                            >
+
+                                <option value="all">
+                                    All Models
+                                </option>
+
+                                <option value="cpa">
+                                    CPA
+                                </option>
+
+                                <option value="cpl">
+                                    CPL
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <!-- STATUS -->
+
+                        <div class="filter-field">
+
+                            <label
+                                class="form-label"
+                                for="statusFilter"
+                            >
+                                Status
+                            </label>
+
+                            <select
+                                class="form-select"
+                                id="statusFilter"
+                            >
+
+                                <option value="all">
+                                    All Statuses
+                                </option>
+
+                                <option value="active">
+                                    Active
+                                </option>
+
+                                <option value="paused">
+                                    Paused
+                                </option>
+
+                                <option value="review">
+                                    Under Review
+                                </option>
+
+                                <option value="monitoring">
+                                    Monitoring
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <!-- RESET -->
+
+                        <div class="filter-actions">
+
+                            <button
+                                class="btn btn-secondary"
+                                type="button"
+                                id="resetFilters"
+                            >
+
+                                <i class="fa-solid fa-rotate-left"></i>
+
+                                Reset
+
+                            </button>
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- =================================
+                 OFFER SUMMARY
+            ================================== -->
+
+            <section class="content-section">
+
+                <div class="dashboard-kpi-grid">
+
+
+                    <!-- TOTAL -->
+
+                    <div class="kpi-card">
+
+                        <div class="kpi-content">
+
+                            <div class="kpi-label">
+                                Total Offers
+                            </div>
+
+                            <div
+                                class="kpi-value"
+                                id="totalOffersCount"
+                            >
+                                0
+                            </div>
+
+                            <div class="kpi-change neutral">
+                                Demo portfolio
+                            </div>
+
+                        </div>
+
+
+                        <div class="kpi-icon">
+
+                            <i class="fa-solid fa-bullseye"></i>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- ACTIVE -->
+
+                    <div class="kpi-card">
+
+                        <div class="kpi-content">
+
+                            <div class="kpi-label">
+                                Active Offers
+                            </div>
+
+                            <div
+                                class="kpi-value"
+                                id="activeOffersCount"
+                            >
+                                0
+                            </div>
+
+                            <div class="kpi-change positive">
+                                Available
+                            </div>
+
+                        </div>
+
+
+                        <div class="kpi-icon">
+
+                            <i class="fa-solid fa-circle-check"></i>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- CPA -->
+
+                    <div class="kpi-card">
+
+                        <div class="kpi-content">
+
+                            <div class="kpi-label">
+                                CPA Offers
+                            </div>
+
+                            <div
+                                class="kpi-value"
+                                id="cpaOffersCount"
+                            >
+                                0
+                            </div>
+
+                            <div class="kpi-change neutral">
+                                Performance based
+                            </div>
+
+                        </div>
+
+
+                        <div class="kpi-icon">
+
+                            <i class="fa-solid fa-dollar-sign"></i>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- CPL -->
+
+                    <div class="kpi-card">
+
+                        <div class="kpi-content">
+
+                            <div class="kpi-label">
+                                CPL Offers
+                            </div>
+
+                            <div
+                                class="kpi-value"
+                                id="cplOffersCount"
+                            >
+                                0
+                            </div>
+
+                            <div class="kpi-change neutral">
+                                Lead generation
+                            </div>
+
+                        </div>
+
+
+                        <div class="kpi-icon">
+
+                            <i class="fa-solid fa-user-check"></i>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+            </section>
+
+
+
+            <!-- =================================
+                 OFFERS TABLE
+            ================================== -->
+
+            <section class="content-section">
+
+                <div class="card">
+
+
+                    <div class="card-header">
+
+                        <div>
+
+                            <h2 class="card-title">
+                                Available Offers
+                            </h2>
+
+                            <p class="card-subtitle">
+                                Fictional offers for portfolio demonstration
+                            </p>
+
+                        </div>
+
+
+                        <span
+                            class="badge badge-neutral"
+                            id="offerCountBadge"
+                        >
+                            0 Offers
+                        </span>
+
+                    </div>
+
+
+                    <div class="table-wrapper">
+
+                        <table class="data-table">
+
+                            <thead>
+
+                                <tr>
+
+                                    <th>
+                                        Offer
+                                    </th>
+
+                                    <th>
+                                        Vertical
+                                    </th>
+
+                                    <th>
+                                        Model
+                                    </th>
+
+                                    <th>
+                                        Payout
+                                    </th>
+
+                                    <th>
+                                        Traffic
+                                    </th>
+
+                                    <th>
+                                        Status
+                                    </th>
+
+                                    <th>
+                                        Actions
+                                    </th>
+
+                                </tr>
+
+                            </thead>
+
+
+                            <tbody id="offersTableBody">
+
+                                <!-- JavaScript renders offers here -->
+
+                            </tbody>
+
+                        </table>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- =================================
+                 NOTICE
+            ================================== -->
+
+            <section class="content-section">
+
+                <div class="alert alert-info">
+
+                    <i class="fa-solid fa-circle-info"></i>
+
+                    <div>
+
+                        <strong>
+                            Portfolio Simulation Data
+                        </strong>
+
+                        <p>
+                            All offer names, payouts, identifiers,
+                            statuses and traffic information on this
+                            page are fictional demo data created
+                            exclusively for portfolio demonstration.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+        </main>
+
+    </div>
+
+</div>
+
+
+
+<!-- JavaScript -->
+
+<script src="../assets/js/app.js"></script>
+
+<script src="../assets/data/offers.js"></script>
+
+<script src="../assets/js/offers.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,821 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="NexaAffiliates - Affiliate Account Manager Portfolio Simulation"
+    >
+
+    <meta
+        name="author"
+        content="NexaAffiliates Portfolio Simulation"
+    >
+
+    <title>NexaAffiliates - Affiliate Account Manager</title>
+
+
+    <!-- Google Fonts -->
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+
+    <!-- Font Awesome -->
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+
+    <!-- NexaAffiliates CSS -->
+
+    <link
+        rel="stylesheet"
+        href="./assets/css/variables.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="./assets/css/base.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="./assets/css/layout.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="./assets/css/components.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="./assets/css/dashboard.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="./assets/css/tables.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="./assets/css/forms.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="./assets/css/responsive.css"
+    >
+
+</head>
+
+
+<body>
+
+
+    <div class="app-layout">
+
+
+        <!-- =========================
+             Sidebar
+        ========================== -->
+
+        <aside class="sidebar">
+
+
+            <div class="sidebar-brand">
+
+                <div class="icon-box">
+
+                    <i class="fa-solid fa-chart-line"></i>
+
+                </div>
+
+
+                <div>
+
+                    <strong>
+                        NexaAffiliates
+                    </strong>
+
+                    <small>
+                        Account Manager
+                    </small>
+
+                </div>
+
+            </div>
+
+
+            <nav class="sidebar-nav">
+
+                <ul>
+
+                    <li>
+                        <a
+                            href="./index.html"
+                            class="active"
+                        >
+                            <i class="fa-solid fa-gauge-high"></i>
+                            <span>Dashboard</span>
+                        </a>
+                    </li>
+
+
+                    <li>
+                        <a href="./pages/offers.html">
+                            <i class="fa-solid fa-bullseye"></i>
+                            <span>Offers</span>
+                        </a>
+                    </li>
+
+
+                    <li>
+                        <a href="./pages/affiliates.html">
+                            <i class="fa-solid fa-users"></i>
+                            <span>Affiliates</span>
+                        </a>
+                    </li>
+
+
+                    <li>
+                        <a href="./pages/advertisers.html">
+                            <i class="fa-solid fa-building"></i>
+                            <span>Advertisers</span>
+                        </a>
+                    </li>
+
+
+                    <li>
+                        <a href="./pages/campaigns.html">
+                            <i class="fa-solid fa-rectangle-ad"></i>
+                            <span>Campaigns</span>
+                        </a>
+                    </li>
+
+
+                    <li>
+                        <a href="./pages/analytics.html">
+                            <i class="fa-solid fa-chart-column"></i>
+                            <span>Performance</span>
+                        </a>
+                    </li>
+
+
+                    <li>
+                        <a href="./pages/compliance.html">
+                            <i class="fa-solid fa-shield-halved"></i>
+                            <span>Compliance</span>
+                        </a>
+                    </li>
+
+
+                    <li>
+                        <a href="./pages/communications.html">
+                            <i class="fa-solid fa-comments"></i>
+                            <span>Communications</span>
+                        </a>
+                    </li>
+
+
+                    <li>
+                        <a href="./pages/reports.html">
+                            <i class="fa-solid fa-file-lines"></i>
+                            <span>Reports</span>
+                        </a>
+                    </li>
+
+
+                    <li>
+                        <a href="./pages/case-study.html">
+                            <i class="fa-solid fa-briefcase"></i>
+                            <span>Case Study</span>
+                        </a>
+                    </li>
+
+
+                    <li>
+                        <a href="./pages/documentation.html">
+                            <i class="fa-solid fa-book"></i>
+                            <span>Documentation</span>
+                        </a>
+                    </li>
+
+                </ul>
+
+            </nav>
+
+
+            <div class="sidebar-footer">
+
+                <div class="simulation-label">
+
+                    <i class="fa-solid fa-circle-info"></i>
+
+                    <span>
+                        Portfolio Simulation
+                    </span>
+
+                </div>
+
+            </div>
+
+        </aside>
+
+
+
+        <!-- =========================
+             Main Area
+        ========================== -->
+
+        <div class="main-area">
+
+
+            <!-- Header -->
+
+            <header class="header">
+
+
+                <div>
+
+                    <h1 class="page-title">
+                        Dashboard
+                    </h1>
+
+                    <p class="page-description">
+                        Affiliate account management overview
+                    </p>
+
+                </div>
+
+
+                <div class="header-actions">
+
+                    <button
+                        class="btn btn-secondary"
+                        type="button"
+                        id="notificationButton"
+                    >
+
+                        <i class="fa-regular fa-bell"></i>
+
+                        Notifications
+
+                    </button>
+
+                </div>
+
+            </header>
+
+
+
+            <!-- Main -->
+
+            <main class="main-content">
+
+
+                <!-- Simulation Notice -->
+
+                <section class="simulation-notice">
+
+
+                    <div class="simulation-notice-icon">
+
+                        <i class="fa-solid fa-flask"></i>
+
+                    </div>
+
+
+                    <div>
+
+                        <h2 class="simulation-notice-title">
+                            Portfolio Simulation
+                        </h2>
+
+
+                        <p class="simulation-notice-text">
+
+                            NexaAffiliates is a fictional
+                            portfolio simulation created to
+                            demonstrate affiliate account-management
+                            workflows. All companies, affiliates,
+                            campaigns, performance data and
+                            results shown in this project are
+                            fictional demo data.
+
+                        </p>
+
+                    </div>
+
+                </section>
+
+
+
+                <!-- Welcome -->
+
+                <section class="content-section">
+
+
+                    <div class="card">
+
+
+                        <div class="card-header">
+
+
+                            <div>
+
+                                <h2 class="card-title">
+                                    Welcome to NexaAffiliates
+                                </h2>
+
+
+                                <p class="card-subtitle">
+                                    Junior Affiliate Account Manager
+                                    Portfolio Simulation
+                                </p>
+
+                            </div>
+
+
+                            <div class="icon-box">
+
+                                <i class="fa-solid fa-briefcase"></i>
+
+                            </div>
+
+                        </div>
+
+
+                        <p>
+
+                            This portfolio demonstrates practical
+                            affiliate account-management workflows
+                            across offers, affiliates, advertisers,
+                            campaigns, performance analytics,
+                            compliance and reporting.
+
+                        </p>
+
+                    </div>
+
+                </section>
+
+
+
+                <!-- KPI -->
+
+                <section class="content-section">
+
+
+                    <div class="section-header">
+
+                        <div>
+
+                            <h2 class="section-title">
+                                Account Overview
+                            </h2>
+
+                            <p class="page-description">
+                                Sample portfolio metrics
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="dashboard-kpi-grid">
+
+
+                        <div class="kpi-card">
+
+                            <div class="kpi-content">
+
+                                <div class="kpi-label">
+                                    Active Offers
+                                </div>
+
+                                <div
+                                    class="kpi-value"
+                                    id="dashboardActiveOffers"
+                                >
+                                    24
+                                </div>
+
+                                <div class="kpi-change positive">
+                                    ↑ 8.4% this month
+                                </div>
+
+                            </div>
+
+
+                            <div class="kpi-icon">
+
+                                <i class="fa-solid fa-bullseye"></i>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <div class="kpi-card">
+
+                            <div class="kpi-content">
+
+                                <div class="kpi-label">
+                                    Active Affiliates
+                                </div>
+
+                                <div
+                                    class="kpi-value"
+                                    id="dashboardActiveAffiliates"
+                                >
+                                    18
+                                </div>
+
+                                <div class="kpi-change positive">
+                                    ↑ 5.2% this month
+                                </div>
+
+                            </div>
+
+
+                            <div class="kpi-icon">
+
+                                <i class="fa-solid fa-users"></i>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <div class="kpi-card">
+
+                            <div class="kpi-content">
+
+                                <div class="kpi-label">
+                                    Live Campaigns
+                                </div>
+
+                                <div
+                                    class="kpi-value"
+                                    id="dashboardLiveCampaigns"
+                                >
+                                    12
+                                </div>
+
+                                <div class="kpi-change positive">
+                                    ↑ 3 campaigns
+                                </div>
+
+                            </div>
+
+
+                            <div class="kpi-icon">
+
+                                <i class="fa-solid fa-rectangle-ad"></i>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <div class="kpi-card">
+
+                            <div class="kpi-content">
+
+                                <div class="kpi-label">
+                                    Compliance Reviews
+                                </div>
+
+                                <div
+                                    class="kpi-value"
+                                    id="dashboardComplianceReviews"
+                                >
+                                    7
+                                </div>
+
+                                <div class="kpi-change neutral">
+                                    Pending review
+                                </div>
+
+                            </div>
+
+
+                            <div class="kpi-icon">
+
+                                <i class="fa-solid fa-shield-halved"></i>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+
+
+                <!-- Dashboard Columns -->
+
+                <section class="dashboard-columns">
+
+
+                    <div class="card">
+
+
+                        <div class="card-header">
+
+                            <div>
+
+                                <h2 class="card-title">
+                                    Performance Summary
+                                </h2>
+
+                                <p class="card-subtitle">
+                                    Fictional demonstration metrics
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="performance-summary">
+
+
+                            <div class="performance-item">
+
+                                <div class="performance-item-label">
+                                    Clicks
+                                </div>
+
+                                <div class="performance-item-value">
+                                    128,450
+                                </div>
+
+                            </div>
+
+
+                            <div class="performance-item">
+
+                                <div class="performance-item-label">
+                                    Conversions
+                                </div>
+
+                                <div class="performance-item-value">
+                                    4,286
+                                </div>
+
+                            </div>
+
+
+                            <div class="performance-item">
+
+                                <div class="performance-item-label">
+                                    Conversion Rate
+                                </div>
+
+                                <div class="performance-item-value">
+                                    3.33%
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="card">
+
+
+                        <div class="card-header">
+
+                            <div>
+
+                                <h2 class="card-title">
+                                    Recent Activity
+                                </h2>
+
+                                <p class="card-subtitle">
+                                    Sample account activity
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="activity-list">
+
+
+                            <div class="activity-item">
+
+                                <div class="activity-icon">
+
+                                    <i class="fa-solid fa-plus"></i>
+
+                                </div>
+
+
+                                <div class="activity-content">
+
+                                    <div class="activity-title">
+                                        New offer added
+                                    </div>
+
+                                    <div class="activity-time">
+                                        2 hours ago
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="activity-item">
+
+                                <div class="activity-icon">
+
+                                    <i class="fa-solid fa-user-plus"></i>
+
+                                </div>
+
+
+                                <div class="activity-content">
+
+                                    <div class="activity-title">
+                                        Affiliate application reviewed
+                                    </div>
+
+                                    <div class="activity-time">
+                                        5 hours ago
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="activity-item">
+
+                                <div class="activity-icon">
+
+                                    <i class="fa-solid fa-chart-line"></i>
+
+                                </div>
+
+
+                                <div class="activity-content">
+
+                                    <div class="activity-title">
+                                        Campaign performance updated
+                                    </div>
+
+                                    <div class="activity-time">
+                                        Yesterday
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="card dashboard-full">
+
+
+                        <div class="card-header">
+
+                            <div>
+
+                                <h2 class="card-title">
+                                    Portfolio Scope
+                                </h2>
+
+                                <p class="card-subtitle">
+                                    Skills demonstrated by this project
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="grid grid-4">
+
+
+                            <div class="performance-item">
+
+                                <div class="performance-item-label">
+                                    Offer Management
+                                </div>
+
+                                <div class="performance-item-value">
+                                    CPA / CPL
+                                </div>
+
+                            </div>
+
+
+                            <div class="performance-item">
+
+                                <div class="performance-item-label">
+                                    Affiliate Management
+                                </div>
+
+                                <div class="performance-item-value">
+                                    Partner Operations
+                                </div>
+
+                            </div>
+
+
+                            <div class="performance-item">
+
+                                <div class="performance-item-label">
+                                    Campaign Management
+                                </div>
+
+                                <div class="performance-item-value">
+                                    Optimization
+                                </div>
+
+                            </div>
+
+
+                            <div class="performance-item">
+
+                                <div class="performance-item-label">
+                                    Compliance
+                                </div>
+
+                                <div class="performance-item-value">
+                                    Monitoring
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+
+            </main>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- JavaScript -->
+
+    <script src="./assets/js/app.js"></script>
+
+    <script src="./assets/js/navigation.js"></script>
+
+    <script src="./assets/js/ui.js"></script>
+
+    <script src="./assets/js/dashboard.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,1166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="NexaAffiliates - Performance Analytics"
+    >
+
+    <meta
+        name="author"
+        content="NexaAffiliates Portfolio Simulation"
+    >
+
+    <title>NexaAffiliates - Performance</title>
+
+
+    <!-- Google Fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+
+    <!-- Font Awesome -->
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+
+    <!-- NexaAffiliates CSS -->
+
+    <link rel="stylesheet" href="../assets/css/variables.css">
+    <link rel="stylesheet" href="../assets/css/base.css">
+    <link rel="stylesheet" href="../assets/css/layout.css">
+    <link rel="stylesheet" href="../assets/css/components.css">
+    <link rel="stylesheet" href="../assets/css/dashboard.css">
+    <link rel="stylesheet" href="../assets/css/tables.css">
+    <link rel="stylesheet" href="../assets/css/forms.css">
+    <link rel="stylesheet" href="../assets/css/responsive.css">
+
+</head>
+
+
+<body>
+
+
+<div class="app-layout">
+
+
+    <!-- =========================================
+         SIDEBAR
+    ========================================== -->
+
+    <aside class="sidebar">
+
+
+        <div class="sidebar-brand">
+
+            <div class="icon-box">
+
+                <i class="fa-solid fa-chart-line"></i>
+
+            </div>
+
+
+            <div>
+
+                <strong>
+                    NexaAffiliates
+                </strong>
+
+                <small>
+                    Account Manager
+                </small>
+
+            </div>
+
+        </div>
+
+
+
+        <nav class="sidebar-nav">
+
+            <ul>
+
+
+                <li>
+
+                    <a href="../index.html">
+
+                        <i class="fa-solid fa-gauge-high"></i>
+
+                        <span>
+                            Dashboard
+                        </span>
+
+                    </a>
+
+                </li>
+
+
+                <li>
+
+                    <a href="./offers.html">
+
+                        <i class="fa-solid fa-bullseye"></i>
+
+                        <span>
+                            Offers
+                        </span>
+
+                    </a>
+
+                </li>
+
+
+                <li>
+
+                    <a href="./affiliates.html">
+
+                        <i class="fa-solid fa-users"></i>
+
+                        <span>
+                            Affiliates
+                        </span>
+
+                    </a>
+
+                </li>
+
+
+                <li>
+
+                    <a href="./advertisers.html">
+
+                        <i class="fa-solid fa-building"></i>
+
+                        <span>
+                            Advertisers
+                        </span>
+
+                    </a>
+
+                </li>
+
+
+                <li>
+
+                    <a href="./campaigns.html">
+
+                        <i class="fa-solid fa-rectangle-ad"></i>
+
+                        <span>
+                            Campaigns
+                        </span>
+
+                    </a>
+
+                </li>
+
+
+                <li>
+
+                    <a
+                        href="./analytics.html"
+                        class="active"
+                    >
+
+                        <i class="fa-solid fa-chart-column"></i>
+
+                        <span>
+                            Performance
+                        </span>
+
+                    </a>
+
+                </li>
+
+
+                <li>
+
+                    <a href="./compliance.html">
+
+                        <i class="fa-solid fa-shield-halved"></i>
+
+                        <span>
+                            Compliance
+                        </span>
+
+                    </a>
+
+                </li>
+
+
+                <li>
+
+                    <a href="./communications.html">
+
+                        <i class="fa-solid fa-comments"></i>
+
+                        <span>
+                            Communications
+                        </span>
+
+                    </a>
+
+                </li>
+
+
+                <li>
+
+                    <a href="./reports.html">
+
+                        <i class="fa-solid fa-file-lines"></i>
+
+                        <span>
+                            Reports
+                        </span>
+
+                    </a>
+
+                </li>
+
+
+                <li>
+
+                    <a href="./case-study.html">
+
+                        <i class="fa-solid fa-briefcase"></i>
+
+                        <span>
+                            Case Study
+                        </span>
+
+                    </a>
+
+                </li>
+
+
+                <li>
+
+                    <a href="./documentation.html">
+
+                        <i class="fa-solid fa-book"></i>
+
+                        <span>
+                            Documentation
+                        </span>
+
+                    </a>
+
+                </li>
+
+
+            </ul>
+
+        </nav>
+
+
+
+        <div class="sidebar-footer">
+
+            <div class="simulation-label">
+
+                <i class="fa-solid fa-circle-info"></i>
+
+                <span>
+                    Portfolio Simulation
+                </span>
+
+            </div>
+
+        </div>
+
+
+    </aside>
+
+
+
+    <!-- =========================================
+         MAIN AREA
+    ========================================== -->
+
+    <div class="main-area">
+
+
+        <!-- HEADER -->
+
+        <header class="header">
+
+
+            <div>
+
+                <h1 class="page-title">
+                    Performance
+                </h1>
+
+                <p class="page-description">
+                    Analyze campaign traffic and conversion performance
+                </p>
+
+            </div>
+
+
+            <div class="header-actions">
+
+                <button
+                    class="btn btn-secondary"
+                    type="button"
+                    id="exportAnalyticsButton"
+                >
+
+                    <i class="fa-solid fa-download"></i>
+
+                    Export
+
+                </button>
+
+            </div>
+
+
+        </header>
+
+
+
+        <!-- =========================================
+             MAIN CONTENT
+        ========================================== -->
+
+        <main class="main-content">
+
+
+            <!-- PAGE HEADER -->
+
+            <section class="page-header">
+
+
+                <div>
+
+                    <h2 class="page-title">
+                        Performance Analytics
+                    </h2>
+
+                    <p class="page-description">
+                        Review traffic, conversions, EPC and revenue signals
+                        across the campaign portfolio.
+                    </p>
+
+                </div>
+
+
+                <div class="badge badge-info">
+
+                    <i class="fa-solid fa-flask"></i>
+
+                    Demo Portfolio
+
+                </div>
+
+
+            </section>
+
+
+
+            <!-- =========================================
+                 FILTERS
+            ========================================== -->
+
+            <section class="content-section">
+
+
+                <div class="card">
+
+
+                    <div class="card-header">
+
+                        <div>
+
+                            <h2 class="card-title">
+                                Analytics Filters
+                            </h2>
+
+                            <p class="card-subtitle">
+                                Adjust the performance view
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="grid grid-4">
+
+
+                        <!-- DATE RANGE -->
+
+                        <div class="form-group">
+
+                            <label
+                                class="form-label"
+                                for="analyticsDateFilter"
+                            >
+                                Date Range
+                            </label>
+
+
+                            <select
+                                class="form-select"
+                                id="analyticsDateFilter"
+                            >
+
+                                <option value="30">
+                                    Last 30 Days
+                                </option>
+
+                                <option value="14">
+                                    Last 14 Days
+                                </option>
+
+                                <option value="7">
+                                    Last 7 Days
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+
+                        <!-- VERTICAL -->
+
+                        <div class="form-group">
+
+                            <label
+                                class="form-label"
+                                for="analyticsVerticalFilter"
+                            >
+                                Vertical
+                            </label>
+
+
+                            <select
+                                class="form-select"
+                                id="analyticsVerticalFilter"
+                            >
+
+                                <option value="all">
+                                    All Verticals
+                                </option>
+
+                                <option value="Finance">
+                                    Finance
+                                </option>
+
+                                <option value="Insurance">
+                                    Insurance
+                                </option>
+
+                                <option value="Home Services">
+                                    Home Services
+                                </option>
+
+                                <option value="SaaS">
+                                    SaaS
+                                </option>
+
+                                <option value="Education">
+                                    Education
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+
+                        <!-- TRAFFIC -->
+
+                        <div class="form-group">
+
+                            <label
+                                class="form-label"
+                                for="analyticsTrafficFilter"
+                            >
+                                Traffic Source
+                            </label>
+
+
+                            <select
+                                class="form-select"
+                                id="analyticsTrafficFilter"
+                            >
+
+                                <option value="all">
+                                    All Traffic
+                                </option>
+
+                                <option value="Search">
+                                    Search
+                                </option>
+
+                                <option value="Content">
+                                    Content
+                                </option>
+
+                                <option value="Social">
+                                    Social
+                                </option>
+
+                                <option value="Email">
+                                    Email
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+
+                        <!-- SEARCH -->
+
+                        <div class="form-group">
+
+                            <label
+                                class="form-label"
+                                for="analyticsSearch"
+                            >
+                                Search Campaign
+                            </label>
+
+
+                            <div class="search-box">
+
+                                <i class="fa-solid fa-magnifying-glass"></i>
+
+                                <input
+                                    type="text"
+                                    id="analyticsSearch"
+                                    placeholder="Search campaigns..."
+                                    autocomplete="off"
+                                >
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+
+
+                    <div class="form-actions">
+
+                        <button
+                            class="btn btn-secondary"
+                            type="button"
+                            id="resetAnalyticsFilters"
+                        >
+
+                            <i class="fa-solid fa-rotate-left"></i>
+
+                            Reset Filters
+
+                        </button>
+
+                    </div>
+
+
+                </div>
+
+
+            </section>
+
+
+
+            <!-- =========================================
+                 KPI CARDS
+            ========================================== -->
+
+            <section class="content-section">
+
+
+                <div class="dashboard-kpi-grid">
+
+
+                    <!-- CLICKS -->
+
+                    <div class="kpi-card">
+
+
+                        <div class="kpi-content">
+
+                            <div class="kpi-label">
+                                Clicks
+                            </div>
+
+                            <div
+                                class="kpi-value"
+                                id="analyticsClicks"
+                            >
+                                0
+                            </div>
+
+                            <div class="kpi-change positive">
+                                Traffic volume
+                            </div>
+
+                        </div>
+
+
+                        <div class="kpi-icon">
+
+                            <i class="fa-solid fa-arrow-pointer"></i>
+
+                        </div>
+
+
+                    </div>
+
+
+
+                    <!-- CONVERSIONS -->
+
+                    <div class="kpi-card">
+
+
+                        <div class="kpi-content">
+
+                            <div class="kpi-label">
+                                Conversions
+                            </div>
+
+                            <div
+                                class="kpi-value"
+                                id="analyticsConversions"
+                            >
+                                0
+                            </div>
+
+                            <div class="kpi-change positive">
+                                Conversion activity
+                            </div>
+
+                        </div>
+
+
+                        <div class="kpi-icon">
+
+                            <i class="fa-solid fa-check"></i>
+
+                        </div>
+
+
+                    </div>
+
+
+
+                    <!-- REVENUE -->
+
+                    <div class="kpi-card">
+
+
+                        <div class="kpi-content">
+
+                            <div class="kpi-label">
+                                Revenue
+                            </div>
+
+                            <div
+                                class="kpi-value"
+                                id="analyticsRevenue"
+                            >
+                                $0
+                            </div>
+
+                            <div class="kpi-change neutral">
+                                Demo revenue
+                            </div>
+
+                        </div>
+
+
+                        <div class="kpi-icon">
+
+                            <i class="fa-solid fa-dollar-sign"></i>
+
+                        </div>
+
+
+                    </div>
+
+
+
+                    <!-- EPC -->
+
+                    <div class="kpi-card">
+
+
+                        <div class="kpi-content">
+
+                            <div class="kpi-label">
+                                EPC
+                            </div>
+
+                            <div
+                                class="kpi-value"
+                                id="analyticsEpc"
+                            >
+                                $0.00
+                            </div>
+
+                            <div class="kpi-change neutral">
+                                Earnings per click
+                            </div>
+
+                        </div>
+
+
+                        <div class="kpi-icon">
+
+                            <i class="fa-solid fa-chart-line"></i>
+
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+
+
+            </section>
+
+
+
+            <!-- =========================================
+                 PERFORMANCE OVERVIEW
+            ========================================== -->
+
+            <section class="content-section">
+
+
+                <div class="dashboard-columns">
+
+
+                    <!-- TRAFFIC PERFORMANCE -->
+
+                    <div class="card">
+
+
+                        <div class="card-header">
+
+
+                            <div>
+
+                                <h3 class="card-title">
+                                    Traffic Performance
+                                </h3>
+
+                                <p class="card-subtitle">
+                                    Click and conversion overview
+                                </p>
+
+                            </div>
+
+
+                            <div class="icon-box">
+
+                                <i class="fa-solid fa-chart-area"></i>
+
+                            </div>
+
+
+                        </div>
+
+
+                        <div
+                            class="chart-container"
+                            id="trafficChart"
+                        >
+
+                            <div class="chart-placeholder">
+
+                                Performance chart will load here
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+
+
+                    <!-- TRAFFIC SOURCES -->
+
+                    <div class="card">
+
+
+                        <div class="card-header">
+
+
+                            <div>
+
+                                <h3 class="card-title">
+                                    Traffic Sources
+                                </h3>
+
+                                <p class="card-subtitle">
+                                    Channel distribution
+                                </p>
+
+                            </div>
+
+
+                            <div class="icon-box">
+
+                                <i class="fa-solid fa-filter"></i>
+
+                            </div>
+
+
+                        </div>
+
+
+                        <div
+                            id="trafficSourceList"
+                            class="activity-list"
+                        >
+
+                            <!-- Generated by JavaScript -->
+
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+
+
+            </section>
+
+
+
+            <!-- =========================================
+                 CAMPAIGN PERFORMANCE TABLE
+            ========================================== -->
+
+            <section class="content-section">
+
+
+                <div class="card">
+
+
+                    <div class="card-header">
+
+
+                        <div>
+
+                            <h2 class="card-title">
+                                Campaign Performance
+                            </h2>
+
+                            <p class="card-subtitle">
+                                Performance metrics by campaign
+                            </p>
+
+                        </div>
+
+
+                        <span
+                            class="badge badge-neutral"
+                            id="analyticsResultCount"
+                        >
+                            0 campaigns
+                        </span>
+
+
+                    </div>
+
+
+
+                    <div class="table-wrapper">
+
+
+                        <table class="data-table">
+
+
+                            <thead>
+
+                                <tr>
+
+                                    <th>
+                                        Campaign
+                                    </th>
+
+                                    <th>
+                                        Vertical
+                                    </th>
+
+                                    <th>
+                                        Traffic
+                                    </th>
+
+                                    <th>
+                                        Clicks
+                                    </th>
+
+                                    <th>
+                                        Conversions
+                                    </th>
+
+                                    <th>
+                                        Conv. Rate
+                                    </th>
+
+                                    <th>
+                                        Revenue
+                                    </th>
+
+                                    <th>
+                                        EPC
+                                    </th>
+
+                                </tr>
+
+                            </thead>
+
+
+                            <tbody id="analyticsTableBody">
+
+                                <!-- Generated by JavaScript -->
+
+                            </tbody>
+
+
+                        </table>
+
+
+                    </div>
+
+
+                </div>
+
+
+            </section>
+
+
+
+            <!-- =========================================
+                 OPTIMIZATION INSIGHTS
+            ========================================== -->
+
+            <section class="content-section">
+
+
+                <div class="grid grid-3">
+
+
+                    <!-- INSIGHT 1 -->
+
+                    <div class="card">
+
+
+                        <div class="card-header">
+
+                            <div>
+
+                                <h3 class="card-title">
+                                    Traffic Quality
+                                </h3>
+
+                                <p class="card-subtitle">
+                                    Traffic monitoring
+                                </p>
+
+                            </div>
+
+
+                            <div class="icon-box">
+
+                                <i class="fa-solid fa-signal"></i>
+
+                            </div>
+
+                        </div>
+
+
+                        <p>
+                            Review traffic consistency, source mix and
+                            campaign-level engagement before scaling.
+                        </p>
+
+                    </div>
+
+
+
+                    <!-- INSIGHT 2 -->
+
+                    <div class="card">
+
+
+                        <div class="card-header">
+
+                            <div>
+
+                                <h3 class="card-title">
+                                    Conversion Signals
+                                </h3>
+
+                                <p class="card-subtitle">
+                                    Funnel monitoring
+                                </p>
+
+                            </div>
+
+
+                            <div class="icon-box">
+
+                                <i class="fa-solid fa-arrow-trend-up"></i>
+
+                            </div>
+
+                        </div>
+
+
+                        <p>
+                            Compare conversion rates and EPC across
+                            campaigns to identify areas for review.
+                        </p>
+
+                    </div>
+
+
+
+                    <!-- INSIGHT 3 -->
+
+                    <div class="card">
+
+
+                        <div class="card-header">
+
+                            <div>
+
+                                <h3 class="card-title">
+                                    Optimization
+                                </h3>
+
+                                <p class="card-subtitle">
+                                    Account management
+                                </p>
+
+                            </div>
+
+
+                            <div class="icon-box">
+
+                                <i class="fa-solid fa-sliders"></i>
+
+                            </div>
+
+                        </div>
+
+
+                        <p>
+                            Use performance signals to coordinate
+                            affiliate and advertiser optimization actions.
+                        </p>
+
+                    </div>
+
+
+                </div>
+
+
+            </section>
+
+
+
+            <!-- =========================================
+                 SIMULATION NOTICE
+            ========================================== -->
+
+            <section class="content-section">
+
+
+                <div class="simulation-notice">
+
+
+                    <div class="simulation-notice-icon">
+
+                        <i class="fa-solid fa-flask"></i>
+
+                    </div>
+
+
+                    <div>
+
+                        <h3 class="simulation-notice-title">
+                            Portfolio Simulation
+                        </h3>
+
+
+                        <p class="simulation-notice-text">
+
+                            All performance metrics, clicks,
+                            conversions, revenue and campaign results
+                            shown in this portfolio are fictional
+                            demonstration data and do not represent
+                            real client or network results.
+
+                        </p>
+
+                    </div>
+
+
+                </div>
+
+
+            </section>
+
+
+        </main>
+
+
+    </div>
+
+
+</div>
+
+
+
+<!-- =========================================
+     JAVASCRIPT
+========================================== -->
+
+<script src="../assets/js/app.js"></script>
+
+<script src="../assets/js/analytics.js"></script>
+
+
+</body>
+
+</html>

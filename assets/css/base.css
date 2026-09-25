@@ -1,0 +1,237 @@
+/* =========================================
+   Base / Reset
+   ========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+
+    font-family: var(--font-primary);
+
+    font-size: var(--font-size-base);
+
+    font-weight: var(--font-weight-regular);
+
+    color: var(--text-primary);
+
+    background-color: var(--background);
+
+    line-height: 1.6;
+
+    min-height: 100vh;
+
+}
+
+
+/* Links */
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+
+a:hover {
+    text-decoration: none;
+}
+
+
+/* Forms */
+
+button,
+input,
+select,
+textarea {
+    font-family: inherit;
+}
+
+
+button {
+    cursor: pointer;
+    border: none;
+}
+
+
+/* Images */
+
+img {
+
+    max-width: 100%;
+
+    height: auto;
+
+    display: block;
+
+}
+
+
+/* Lists */
+
+ul,
+ol {
+    list-style: none;
+}
+
+
+/* Headings */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+
+    color: var(--text-primary);
+
+    font-weight: var(--font-weight-semibold);
+
+    line-height: 1.3;
+
+}
+
+
+h1 {
+    font-size: var(--font-size-3xl);
+}
+
+
+h2 {
+    font-size: var(--font-size-2xl);
+}
+
+
+h3 {
+    font-size: var(--font-size-xl);
+}
+
+
+h4 {
+    font-size: var(--font-size-lg);
+}
+
+
+/* Paragraph */
+
+p {
+    color: var(--text-secondary);
+}
+
+
+/* Selection */
+
+::selection {
+
+    background-color: var(--primary);
+
+    color: var(--surface);
+
+}
+
+
+/* Focus */
+
+:focus-visible {
+
+    outline: 2px solid var(--primary);
+
+    outline-offset: 2px;
+
+}
+
+
+/* Scrollbar */
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+
+::-webkit-scrollbar-track {
+    background: var(--surface-secondary);
+}
+
+
+::-webkit-scrollbar-thumb {
+
+    background: var(--border);
+
+    border-radius: var(--radius-full);
+
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--text-muted);
+}
+
+
+/* Utilities */
+
+.text-primary {
+    color: var(--text-primary);
+}
+
+.text-secondary {
+    color: var(--text-secondary);
+}
+
+.text-muted {
+    color: var(--text-muted);
+}
+
+.text-success {
+    color: var(--success);
+}
+
+.text-warning {
+    color: var(--warning);
+}
+
+.text-danger {
+    color: var(--danger);
+}
+
+.text-info {
+    color: var(--info);
+}
+
+
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+
+.fw-regular {
+    font-weight: var(--font-weight-regular);
+}
+
+.fw-medium {
+    font-weight: var(--font-weight-medium);
+}
+
+.fw-semibold {
+    font-weight: var(--font-weight-semibold);
+}
+
+.fw-bold {
+    font-weight: var(--font-weight-bold);
+}

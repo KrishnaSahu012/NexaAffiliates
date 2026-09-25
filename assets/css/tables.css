@@ -1,0 +1,130 @@
+/* =========================================
+   NexaAffiliates - Tables
+   ========================================= */
+
+.table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    background: var(--surface);
+}
+
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 760px;
+}
+
+.data-table thead {
+    background: var(--surface-secondary);
+}
+
+.data-table th {
+    padding: 14px 16px;
+    text-align: left;
+    color: var(--text-secondary);
+    font-size: var(--font-size-xs);
+    font-weight: var(--font-weight-semibold);
+    border-bottom: 1px solid var(--border);
+    white-space: nowrap;
+}
+
+.data-table td {
+    padding: 16px;
+    color: var(--text-secondary);
+    font-size: var(--font-size-sm);
+    border-bottom: 1px solid var(--border);
+    vertical-align: middle;
+}
+
+.data-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.data-table tbody tr:hover {
+    background: #FAFAFF;
+}
+
+.data-table .primary-text {
+    color: var(--text-primary);
+    font-weight: var(--font-weight-medium);
+}
+
+.data-table .secondary-text {
+    display: block;
+    margin-top: 3px;
+    color: var(--text-muted);
+    font-size: var(--font-size-xs);
+}
+
+.table-actions {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+}
+
+.table-action {
+    width: 34px;
+    height: 34px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-secondary);
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    transition:
+        color var(--transition-fast),
+        background-color var(--transition-fast),
+        border-color var(--transition-fast);
+}
+
+.table-action:hover {
+    color: var(--primary);
+    background: var(--primary-light);
+    border-color: #C7D2FE;
+}
+
+.table-pagination {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-4);
+    padding: var(--space-4);
+    border-top: 1px solid var(--border);
+}
+
+.pagination-info {
+    color: var(--text-muted);
+    font-size: var(--font-size-xs);
+}
+
+.pagination-buttons {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+}
+
+.pagination-btn {
+    width: 34px;
+    height: 34px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-secondary);
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+}
+
+.pagination-btn:hover {
+    color: var(--primary);
+    background: var(--primary-light);
+}
+
+.pagination-btn.active {
+    color: var(--surface);
+    background: var(--primary);
+    border-color: var(--primary);
+}

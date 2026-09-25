@@ -1,0 +1,111 @@
+:root {
+
+    /* Brand */
+
+    --primary: #4F46E5;
+    --primary-dark: #3730A3;
+    --primary-light: #EEF2FF;
+
+    --secondary: #2563EB;
+
+
+    /* Dark */
+
+    --dark: #0F172A;
+    --dark-secondary: #1E293B;
+
+
+    /* Text */
+
+    --text-primary: #0F172A;
+    --text-secondary: #475569;
+    --text-muted: #64748B;
+
+
+    /* Background */
+
+    --background: #F8FAFC;
+    --surface: #FFFFFF;
+    --surface-secondary: #F1F5F9;
+
+
+    /* Border */
+
+    --border: #E2E8F0;
+
+
+    /* Status */
+
+    --success: #16A34A;
+    --warning: #D97706;
+    --danger: #DC2626;
+    --info: #0284C7;
+
+
+    /* Typography */
+
+    --font-primary: "Poppins", sans-serif;
+
+    --font-size-xs: 12px;
+    --font-size-sm: 14px;
+    --font-size-base: 16px;
+    --font-size-lg: 18px;
+    --font-size-xl: 20px;
+    --font-size-2xl: 24px;
+    --font-size-3xl: 30px;
+    --font-size-4xl: 36px;
+
+
+    --font-weight-regular: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+
+
+    /* Spacing */
+
+    --space-1: 4px;
+    --space-2: 8px;
+    --space-3: 12px;
+    --space-4: 16px;
+    --space-5: 20px;
+    --space-6: 24px;
+    --space-8: 32px;
+    --space-10: 40px;
+    --space-12: 48px;
+
+
+    /* Radius */
+
+    --radius-sm: 6px;
+    --radius-md: 10px;
+    --radius-lg: 14px;
+    --radius-xl: 20px;
+    --radius-full: 9999px;
+
+
+    /* Shadows */
+
+    --shadow-sm:
+        0 1px 2px rgba(15, 23, 42, 0.05);
+
+    --shadow-md:
+        0 4px 12px rgba(15, 23, 42, 0.08);
+
+    --shadow-lg:
+        0 10px 30px rgba(15, 23, 42, 0.10);
+
+
+    /* Layout */
+
+    --sidebar-width: 260px;
+    --header-height: 72px;
+    --container-width: 1440px;
+
+
+    /* Transition */
+
+    --transition-fast: 0.15s ease;
+    --transition-normal: 0.25s ease;
+
+}

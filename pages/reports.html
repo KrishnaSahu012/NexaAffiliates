@@ -1,0 +1,1304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="NexaAffiliates Reports - Demo Affiliate Account Manager Portfolio"
+    >
+
+    <title>Reports | NexaAffiliates</title>
+
+
+    <!-- Google Fonts -->
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+
+    <!-- Font Awesome -->
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+
+    <!-- Project CSS -->
+
+    <link rel="stylesheet" href="../assets/css/variables.css">
+    <link rel="stylesheet" href="../assets/css/base.css">
+    <link rel="stylesheet" href="../assets/css/layout.css">
+    <link rel="stylesheet" href="../assets/css/components.css">
+    <link rel="stylesheet" href="../assets/css/dashboard.css">
+    <link rel="stylesheet" href="../assets/css/tables.css">
+    <link rel="stylesheet" href="../assets/css/forms.css">
+    <link rel="stylesheet" href="../assets/css/responsive.css">
+    <link rel="stylesheet" href="../assets/css/main.css">
+
+</head>
+
+
+<body>
+
+
+<div class="app-layout">
+
+
+    <!-- =================================
+         SIDEBAR
+    ================================== -->
+
+    <aside class="sidebar">
+
+
+        <div class="sidebar-brand">
+
+            <div class="icon-box">
+
+                <i class="fa-solid fa-network-wired"></i>
+
+            </div>
+
+
+            <div>
+
+                <strong>NexaAffiliates</strong>
+
+                <small>
+                    Affiliate Account Manager
+                </small>
+
+            </div>
+
+        </div>
+
+
+
+        <nav class="sidebar-nav">
+
+            <ul>
+
+
+                <li>
+                    <a href="../index.html">
+
+                        <i class="fa-solid fa-chart-pie"></i>
+
+                        <span>
+                            Dashboard
+                        </span>
+
+                    </a>
+                </li>
+
+
+                <li>
+                    <a href="offers.html">
+
+                        <i class="fa-solid fa-layer-group"></i>
+
+                        <span>
+                            Offers
+                        </span>
+
+                    </a>
+                </li>
+
+
+                <li>
+                    <a href="affiliates.html">
+
+                        <i class="fa-solid fa-users"></i>
+
+                        <span>
+                            Affiliates
+                        </span>
+
+                    </a>
+                </li>
+
+
+                <li>
+                    <a href="advertisers.html">
+
+                        <i class="fa-solid fa-building"></i>
+
+                        <span>
+                            Advertisers
+                        </span>
+
+                    </a>
+                </li>
+
+
+                <li>
+                    <a href="campaigns.html">
+
+                        <i class="fa-solid fa-bullhorn"></i>
+
+                        <span>
+                            Campaigns
+                        </span>
+
+                    </a>
+                </li>
+
+
+                <li>
+                    <a href="analytics.html">
+
+                        <i class="fa-solid fa-chart-line"></i>
+
+                        <span>
+                            Performance
+                        </span>
+
+                    </a>
+                </li>
+
+
+                <li>
+                    <a href="compliance.html">
+
+                        <i class="fa-solid fa-shield-halved"></i>
+
+                        <span>
+                            Compliance
+                        </span>
+
+                    </a>
+                </li>
+
+
+                <li>
+                    <a href="communications.html">
+
+                        <i class="fa-solid fa-comments"></i>
+
+                        <span>
+                            Communications
+                        </span>
+
+                    </a>
+                </li>
+
+
+                <li>
+                    <a href="reports.html" class="active">
+
+                        <i class="fa-solid fa-file-lines"></i>
+
+                        <span>
+                            Reports
+                        </span>
+
+                    </a>
+                </li>
+
+
+                <li>
+                    <a href="case-study.html">
+
+                        <i class="fa-solid fa-briefcase"></i>
+
+                        <span>
+                            Case Study
+                        </span>
+
+                    </a>
+                </li>
+
+
+                <li>
+                    <a href="documentation.html">
+
+                        <i class="fa-solid fa-book"></i>
+
+                        <span>
+                            Documentation
+                        </span>
+
+                    </a>
+                </li>
+
+
+            </ul>
+
+        </nav>
+
+
+
+        <div class="sidebar-footer">
+
+            <div class="simulation-label">
+
+                <i class="fa-solid fa-circle-info"></i>
+
+                <span>
+                    Portfolio Simulation
+                </span>
+
+            </div>
+
+        </div>
+
+
+    </aside>
+
+
+
+    <!-- =================================
+         MAIN AREA
+    ================================== -->
+
+    <main class="main-area">
+
+
+        <!-- Header -->
+
+        <header class="header">
+
+
+            <div>
+
+                <h2 class="page-title">
+                    Reports
+                </h2>
+
+                <p class="page-description">
+                    Generate account, campaign and performance reports
+                </p>
+
+            </div>
+
+
+            <div class="header-actions">
+
+                <button
+                    class="btn btn-primary"
+                    id="generateReportButton"
+                    type="button"
+                >
+
+                    <i class="fa-solid fa-file-export"></i>
+
+                    Generate Report
+
+                </button>
+
+            </div>
+
+
+        </header>
+
+
+
+        <!-- =================================
+             MAIN CONTENT
+        ================================== -->
+
+        <div class="main-content">
+
+
+            <!-- Page Header -->
+
+            <div class="page-header">
+
+
+                <div>
+
+                    <h1 class="page-title">
+                        Reporting Center
+                    </h1>
+
+                    <p class="page-description">
+                        Prepare structured reports for affiliate account management.
+                    </p>
+
+                </div>
+
+
+                <span class="badge badge-info">
+                    Demo Portfolio
+                </span>
+
+
+            </div>
+
+
+
+            <!-- Simulation Notice -->
+
+            <div class="simulation-notice">
+
+
+                <div class="simulation-notice-icon">
+
+                    <i class="fa-solid fa-file-chart-column"></i>
+
+                </div>
+
+
+                <div>
+
+                    <h3 class="simulation-notice-title">
+                        Fictional Reporting Environment
+                    </h3>
+
+                    <p class="simulation-notice-text">
+                        All report names, metrics, campaign data and generated
+                        outputs shown here are fictional portfolio data created
+                        for demonstration purposes.
+                    </p>
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- =================================
+                 KPI CARDS
+            ================================== -->
+
+            <section class="content-section">
+
+
+                <div class="dashboard-kpi-grid">
+
+
+                    <!-- Total Reports -->
+
+                    <div class="kpi-card">
+
+
+                        <div class="kpi-content">
+
+                            <div class="kpi-label">
+                                Total Reports
+                            </div>
+
+                            <div
+                                class="kpi-value"
+                                id="totalReportsCount"
+                            >
+                                0
+                            </div>
+
+                            <div class="kpi-change neutral">
+                                Available report records
+                            </div>
+
+                        </div>
+
+
+                        <div class="kpi-icon">
+
+                            <i class="fa-solid fa-file-lines"></i>
+
+                        </div>
+
+
+                    </div>
+
+
+
+                    <!-- Performance Reports -->
+
+                    <div class="kpi-card">
+
+
+                        <div class="kpi-content">
+
+                            <div class="kpi-label">
+                                Performance
+                            </div>
+
+                            <div
+                                class="kpi-value"
+                                id="performanceReportsCount"
+                            >
+                                0
+                            </div>
+
+                            <div class="kpi-change positive">
+                                Campaign performance
+                            </div>
+
+                        </div>
+
+
+                        <div class="kpi-icon">
+
+                            <i class="fa-solid fa-chart-line"></i>
+
+                        </div>
+
+
+                    </div>
+
+
+
+                    <!-- Account Reports -->
+
+                    <div class="kpi-card">
+
+
+                        <div class="kpi-content">
+
+                            <div class="kpi-label">
+                                Account Reports
+                            </div>
+
+                            <div
+                                class="kpi-value"
+                                id="accountReportsCount"
+                            >
+                                0
+                            </div>
+
+                            <div class="kpi-change neutral">
+                                Partner activity
+                            </div>
+
+                        </div>
+
+
+                        <div class="kpi-icon">
+
+                            <i class="fa-solid fa-users"></i>
+
+                        </div>
+
+
+                    </div>
+
+
+
+                    <!-- Scheduled -->
+
+                    <div class="kpi-card">
+
+
+                        <div class="kpi-content">
+
+                            <div class="kpi-label">
+                                Scheduled
+                            </div>
+
+                            <div
+                                class="kpi-value"
+                                id="scheduledReportsCount"
+                            >
+                                0
+                            </div>
+
+                            <div class="kpi-change neutral">
+                                Recurring report tasks
+                            </div>
+
+                        </div>
+
+
+                        <div class="kpi-icon">
+
+                            <i class="fa-solid fa-calendar-days"></i>
+
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+
+
+            </section>
+
+
+
+            <!-- =================================
+                 REPORT FILTERS
+            ================================== -->
+
+            <section class="content-section">
+
+
+                <div class="filter-panel">
+
+
+                    <div class="section-header">
+
+
+                        <div>
+
+                            <h3 class="section-title">
+                                Report Library
+                            </h3>
+
+                            <p class="card-subtitle">
+                                Search reports and filter by type or status.
+                            </p>
+
+                        </div>
+
+
+                        <span
+                            class="badge badge-neutral"
+                            id="reportsCountBadge"
+                        >
+                            0 reports
+                        </span>
+
+
+                    </div>
+
+
+
+                    <div class="filter-grid">
+
+
+                        <!-- Search -->
+
+                        <div class="form-group">
+
+
+                            <label
+                                class="form-label"
+                                for="reportSearch"
+                            >
+                                Search
+                            </label>
+
+
+                            <div class="search-box">
+
+
+                                <i class="fa-solid fa-magnifying-glass"></i>
+
+
+                                <input
+                                    type="text"
+                                    id="reportSearch"
+                                    placeholder="Search report name or owner..."
+                                >
+
+
+                            </div>
+
+
+                        </div>
+
+
+
+                        <!-- Report Type -->
+
+                        <div class="form-group">
+
+
+                            <label
+                                class="form-label"
+                                for="reportTypeFilter"
+                            >
+                                Report Type
+                            </label>
+
+
+                            <select
+                                class="form-select"
+                                id="reportTypeFilter"
+                            >
+
+                                <option value="all">
+                                    All Types
+                                </option>
+
+                                <option value="Performance">
+                                    Performance
+                                </option>
+
+                                <option value="Account">
+                                    Account
+                                </option>
+
+                                <option value="Compliance">
+                                    Compliance
+                                </option>
+
+                                <option value="Campaign">
+                                    Campaign
+                                </option>
+
+                            </select>
+
+
+                        </div>
+
+
+
+                        <!-- Status -->
+
+                        <div class="form-group">
+
+
+                            <label
+                                class="form-label"
+                                for="reportStatusFilter"
+                            >
+                                Status
+                            </label>
+
+
+                            <select
+                                class="form-select"
+                                id="reportStatusFilter"
+                            >
+
+                                <option value="all">
+                                    All Statuses
+                                </option>
+
+                                <option value="Ready">
+                                    Ready
+                                </option>
+
+                                <option value="Scheduled">
+                                    Scheduled
+                                </option>
+
+                                <option value="Draft">
+                                    Draft
+                                </option>
+
+                            </select>
+
+
+                        </div>
+
+
+
+                        <!-- Period -->
+
+                        <div class="form-group">
+
+
+                            <label
+                                class="form-label"
+                                for="reportPeriodFilter"
+                            >
+                                Period
+                            </label>
+
+
+                            <select
+                                class="form-select"
+                                id="reportPeriodFilter"
+                            >
+
+                                <option value="all">
+                                    All Periods
+                                </option>
+
+                                <option value="Daily">
+                                    Daily
+                                </option>
+
+                                <option value="Weekly">
+                                    Weekly
+                                </option>
+
+                                <option value="Monthly">
+                                    Monthly
+                                </option>
+
+                            </select>
+
+
+                        </div>
+
+
+
+                        <!-- Reset -->
+
+                        <div class="filter-actions">
+
+
+                            <button
+                                class="btn btn-secondary"
+                                id="resetReportFilters"
+                                type="button"
+                            >
+
+                                <i class="fa-solid fa-rotate-left"></i>
+
+                                Reset
+
+                            </button>
+
+
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+
+
+            </section>
+
+
+
+            <!-- =================================
+                 REPORT TABLE
+            ================================== -->
+
+            <section class="content-section">
+
+
+                <div class="card">
+
+
+                    <div class="card-header">
+
+
+                        <div>
+
+                            <h3 class="card-title">
+                                Report Library
+                            </h3>
+
+                            <p class="card-subtitle">
+                                Saved and scheduled portfolio reports.
+                            </p>
+
+                        </div>
+
+
+                    </div>
+
+
+
+                    <div class="table-wrapper">
+
+
+                        <table class="data-table">
+
+
+                            <thead>
+
+                                <tr>
+
+                                    <th>Report</th>
+
+                                    <th>Type</th>
+
+                                    <th>Period</th>
+
+                                    <th>Owner</th>
+
+                                    <th>Status</th>
+
+                                    <th>Last Generated</th>
+
+                                    <th>Actions</th>
+
+                                </tr>
+
+                            </thead>
+
+
+                            <tbody id="reportsTableBody">
+
+                                <!-- JavaScript renders reports -->
+
+                            </tbody>
+
+
+                        </table>
+
+
+
+                        <div class="table-pagination">
+
+
+                            <div
+                                class="pagination-info"
+                                id="reportsResultCount"
+                            >
+                                0 reports
+                            </div>
+
+
+                            <div class="pagination-buttons">
+
+
+                                <button
+                                    class="pagination-btn active"
+                                    type="button"
+                                >
+                                    1
+                                </button>
+
+
+                            </div>
+
+
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+
+
+            </section>
+
+
+
+            <!-- =================================
+                 REPORT TYPES
+            ================================== -->
+
+            <section class="content-section">
+
+
+                <div class="grid grid-3">
+
+
+                    <!-- Performance -->
+
+                    <div class="card">
+
+
+                        <div class="card-header">
+
+
+                            <div>
+
+                                <h3 class="card-title">
+                                    Performance Reports
+                                </h3>
+
+                                <p class="card-subtitle">
+                                    Analyze clicks, conversions and revenue.
+                                </p>
+
+                            </div>
+
+
+                            <div class="icon-box">
+
+                                <i class="fa-solid fa-chart-column"></i>
+
+                            </div>
+
+
+                        </div>
+
+
+                        <div class="performance-summary">
+
+
+                            <div class="performance-item">
+
+                                <div class="performance-item-label">
+                                    Reports
+                                </div>
+
+                                <div class="performance-item-value">
+                                    3
+                                </div>
+
+                            </div>
+
+
+                            <div class="performance-item">
+
+                                <div class="performance-item-label">
+                                    Ready
+                                </div>
+
+                                <div class="performance-item-value text-success">
+                                    2
+                                </div>
+
+                            </div>
+
+
+                            <div class="performance-item">
+
+                                <div class="performance-item-label">
+                                    Scheduled
+                                </div>
+
+                                <div class="performance-item-value">
+                                    1
+                                </div>
+
+                            </div>
+
+
+                        </div>
+
+
+                    </div>
+
+
+
+                    <!-- Account -->
+
+                    <div class="card">
+
+
+                        <div class="card-header">
+
+
+                            <div>
+
+                                <h3 class="card-title">
+                                    Account Reports
+                                </h3>
+
+                                <p class="card-subtitle">
+                                    Review affiliate and advertiser activity.
+                                </p>
+
+                            </div>
+
+
+                            <div class="icon-box">
+
+                                <i class="fa-solid fa-user-group"></i>
+
+                            </div>
+
+
+                        </div>
+
+
+                        <div class="performance-summary">
+
+
+                            <div class="performance-item">
+
+                                <div class="performance-item-label">
+                                    Reports
+                                </div>
+
+                                <div class="performance-item-value">
+                                    2
+                                </div>
+
+                            </div>
+
+
+                            <div class="performance-item">
+
+                                <div class="performance-item-label">
+                                    Ready
+                                </div>
+
+                                <div class="performance-item-value text-success">
+                                    1
+                                </div>
+
+                            </div>
+
+
+                            <div class="performance-item">
+
+                                <div class="performance-item-label">
+                                    Draft
+                                </div>
+
+                                <div class="performance-item-value">
+                                    1
+                                </div>
+
+                            </div>
+
+
+                        </div>
+
+
+                    </div>
+
+
+
+                    <!-- Compliance -->
+
+                    <div class="card">
+
+
+                        <div class="card-header">
+
+
+                            <div>
+
+                                <h3 class="card-title">
+                                    Compliance Reports
+                                </h3>
+
+                                <p class="card-subtitle">
+                                    Track policy and review activity.
+                                </p>
+
+                            </div>
+
+
+                            <div class="icon-box">
+
+                                <i class="fa-solid fa-shield-halved"></i>
+
+                            </div>
+
+
+                        </div>
+
+
+                        <div class="performance-summary">
+
+
+                            <div class="performance-item">
+
+                                <div class="performance-item-label">
+                                    Reports
+                                </div>
+
+                                <div class="performance-item-value">
+                                    2
+                                </div>
+
+                            </div>
+
+
+                            <div class="performance-item">
+
+                                <div class="performance-item-label">
+                                    Ready
+                                </div>
+
+                                <div class="performance-item-value text-success">
+                                    2
+                                </div>
+
+                            </div>
+
+
+                            <div class="performance-item">
+
+                                <div class="performance-item-label">
+                                    Issues
+                                </div>
+
+                                <div class="performance-item-value text-warning">
+                                    1
+                                </div>
+
+                            </div>
+
+
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+
+
+            </section>
+
+
+
+            <!-- =================================
+                 REPORTING WORKFLOW
+            ================================== -->
+
+            <section class="content-section">
+
+
+                <div class="card">
+
+
+                    <div class="card-header">
+
+
+                        <div>
+
+                            <h3 class="card-title">
+                                Reporting Workflow
+                            </h3>
+
+                            <p class="card-subtitle">
+                                Example process for preparing account reports.
+                            </p>
+
+                        </div>
+
+
+                    </div>
+
+
+
+                    <div class="grid grid-4">
+
+
+                        <div class="performance-item">
+
+                            <div class="icon-box">
+
+                                <i class="fa-solid fa-filter"></i>
+
+                            </div>
+
+
+                            <div
+                                class="performance-item-label"
+                                style="margin-top:12px;"
+                            >
+                                Step 1
+                            </div>
+
+
+                            <div class="performance-item-value">
+                                Select Data
+                            </div>
+
+
+                        </div>
+
+
+
+                        <div class="performance-item">
+
+                            <div class="icon-box">
+
+                                <i class="fa-solid fa-chart-line"></i>
+
+                            </div>
+
+
+                            <div
+                                class="performance-item-label"
+                                style="margin-top:12px;"
+                            >
+                                Step 2
+                            </div>
+
+
+                            <div class="performance-item-value">
+                                Analyze
+                            </div>
+
+
+                        </div>
+
+
+
+                        <div class="performance-item">
+
+                            <div class="icon-box">
+
+                                <i class="fa-solid fa-file-lines"></i>
+
+                            </div>
+
+
+                            <div
+                                class="performance-item-label"
+                                style="margin-top:12px;"
+                            >
+                                Step 3
+                            </div>
+
+
+                            <div class="performance-item-value">
+                                Generate
+                            </div>
+
+
+                        </div>
+
+
+
+                        <div class="performance-item">
+
+                            <div class="icon-box">
+
+                                <i class="fa-solid fa-share-nodes"></i>
+
+                            </div>
+
+
+                            <div
+                                class="performance-item-label"
+                                style="margin-top:12px;"
+                            >
+                                Step 4
+                            </div>
+
+
+                            <div class="performance-item-value">
+                                Share
+                            </div>
+
+
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+
+
+            </section>
+
+
+
+        </div>
+
+
+    </main>
+
+
+</div>
+
+
+
+<!-- Project JavaScript -->
+
+<script src="../assets/js/app.js"></script>
+
+<script src="../assets/js/reports.js"></script>
+
+
+</body>
+
+</html>

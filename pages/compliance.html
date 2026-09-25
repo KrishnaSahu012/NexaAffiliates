@@ -1,0 +1,1013 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="NexaAffiliates Compliance Management - Demo Affiliate Account Manager Portfolio"
+    >
+
+    <title>Compliance | NexaAffiliates</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+    <!-- Project CSS -->
+    <link rel="stylesheet" href="../assets/css/variables.css">
+    <link rel="stylesheet" href="../assets/css/base.css">
+    <link rel="stylesheet" href="../assets/css/layout.css">
+    <link rel="stylesheet" href="../assets/css/components.css">
+    <link rel="stylesheet" href="../assets/css/dashboard.css">
+    <link rel="stylesheet" href="../assets/css/tables.css">
+    <link rel="stylesheet" href="../assets/css/forms.css">
+    <link rel="stylesheet" href="../assets/css/responsive.css">
+    <link rel="stylesheet" href="../assets/css/main.css">
+</head>
+
+<body>
+
+<div class="app-layout">
+
+    <!-- =========================
+         SIDEBAR
+    ========================== -->
+
+    <aside class="sidebar">
+
+        <div class="sidebar-brand">
+            <div class="icon-box">
+                <i class="fa-solid fa-network-wired"></i>
+            </div>
+
+            <div>
+                <strong>NexaAffiliates</strong>
+                <small>Affiliate Account Manager</small>
+            </div>
+        </div>
+
+        <nav class="sidebar-nav">
+
+            <ul>
+
+                <li>
+                    <a href="../index.html">
+                        <i class="fa-solid fa-chart-pie"></i>
+                        <span>Dashboard</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="offers.html">
+                        <i class="fa-solid fa-layer-group"></i>
+                        <span>Offers</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="affiliates.html">
+                        <i class="fa-solid fa-users"></i>
+                        <span>Affiliates</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="advertisers.html">
+                        <i class="fa-solid fa-building"></i>
+                        <span>Advertisers</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="campaigns.html">
+                        <i class="fa-solid fa-bullhorn"></i>
+                        <span>Campaigns</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="analytics.html">
+                        <i class="fa-solid fa-chart-line"></i>
+                        <span>Performance</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="compliance.html" class="active">
+                        <i class="fa-solid fa-shield-halved"></i>
+                        <span>Compliance</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="communications.html">
+                        <i class="fa-solid fa-comments"></i>
+                        <span>Communications</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="reports.html">
+                        <i class="fa-solid fa-file-lines"></i>
+                        <span>Reports</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="case-study.html">
+                        <i class="fa-solid fa-briefcase"></i>
+                        <span>Case Study</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="documentation.html">
+                        <i class="fa-solid fa-book"></i>
+                        <span>Documentation</span>
+                    </a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+        <div class="sidebar-footer">
+
+            <div class="simulation-label">
+                <i class="fa-solid fa-circle-info"></i>
+                <span>Portfolio Simulation</span>
+            </div>
+
+        </div>
+
+    </aside>
+
+
+    <!-- =========================
+         MAIN AREA
+    ========================== -->
+
+    <main class="main-area">
+
+        <!-- Header -->
+
+        <header class="header">
+
+            <div>
+                <h2 class="page-title">Compliance</h2>
+
+                <p class="page-description">
+                    Review traffic quality, policy checks and compliance activity
+                </p>
+            </div>
+
+            <div class="header-actions">
+
+                <button
+                    class="btn btn-primary"
+                    id="addComplianceReviewButton"
+                    type="button"
+                >
+                    <i class="fa-solid fa-plus"></i>
+                    Add Review
+                </button>
+
+            </div>
+
+        </header>
+
+
+        <!-- Main Content -->
+
+        <div class="main-content">
+
+            <!-- Page Header -->
+
+            <div class="page-header">
+
+                <div>
+
+                    <h1 class="page-title">
+                        Compliance Management
+                    </h1>
+
+                    <p class="page-description">
+                        Monitor affiliate traffic, policy requirements and review status.
+                    </p>
+
+                </div>
+
+                <span class="badge badge-info">
+                    Demo Portfolio
+                </span>
+
+            </div>
+
+
+            <!-- Simulation Notice -->
+
+            <div class="simulation-notice">
+
+                <div class="simulation-notice-icon">
+                    <i class="fa-solid fa-shield-halved"></i>
+                </div>
+
+                <div>
+
+                    <h3 class="simulation-notice-title">
+                        Fictional Compliance Environment
+                    </h3>
+
+                    <p class="simulation-notice-text">
+                        All affiliates, campaigns, compliance reviews and findings
+                        shown on this page are fictional portfolio data created for
+                        demonstration purposes.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- =========================
+                 KPI CARDS
+            ========================== -->
+
+            <section class="content-section">
+
+                <div class="dashboard-kpi-grid">
+
+                    <!-- Total Reviews -->
+
+                    <div class="kpi-card">
+
+                        <div class="kpi-content">
+
+                            <div class="kpi-label">
+                                Total Reviews
+                            </div>
+
+                            <div
+                                class="kpi-value"
+                                id="totalComplianceCount"
+                            >
+                                0
+                            </div>
+
+                            <div class="kpi-change neutral">
+                                Active review records
+                            </div>
+
+                        </div>
+
+                        <div class="kpi-icon">
+                            <i class="fa-solid fa-clipboard-check"></i>
+                        </div>
+
+                    </div>
+
+
+                    <!-- Approved -->
+
+                    <div class="kpi-card">
+
+                        <div class="kpi-content">
+
+                            <div class="kpi-label">
+                                Approved
+                            </div>
+
+                            <div
+                                class="kpi-value"
+                                id="approvedComplianceCount"
+                            >
+                                0
+                            </div>
+
+                            <div class="kpi-change positive">
+                                Passed compliance review
+                            </div>
+
+                        </div>
+
+                        <div class="kpi-icon">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </div>
+
+                    </div>
+
+
+                    <!-- Monitoring -->
+
+                    <div class="kpi-card">
+
+                        <div class="kpi-content">
+
+                            <div class="kpi-label">
+                                Monitoring
+                            </div>
+
+                            <div
+                                class="kpi-value"
+                                id="monitoringComplianceCount"
+                            >
+                                0
+                            </div>
+
+                            <div class="kpi-change neutral">
+                                Requires observation
+                            </div>
+
+                        </div>
+
+                        <div class="kpi-icon">
+                            <i class="fa-solid fa-eye"></i>
+                        </div>
+
+                    </div>
+
+
+                    <!-- Action Required -->
+
+                    <div class="kpi-card">
+
+                        <div class="kpi-content">
+
+                            <div class="kpi-label">
+                                Action Required
+                            </div>
+
+                            <div
+                                class="kpi-value"
+                                id="actionComplianceCount"
+                            >
+                                0
+                            </div>
+
+                            <div class="kpi-change negative">
+                                Needs follow-up
+                            </div>
+
+                        </div>
+
+                        <div class="kpi-icon">
+                            <i class="fa-solid fa-triangle-exclamation"></i>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- =========================
+                 FILTERS
+            ========================== -->
+
+            <section class="content-section">
+
+                <div class="filter-panel">
+
+                    <div class="section-header">
+
+                        <div>
+
+                            <h3 class="section-title">
+                                Compliance Reviews
+                            </h3>
+
+                            <p class="card-subtitle">
+                                Filter reviews by affiliate, risk level or status.
+                            </p>
+
+                        </div>
+
+                        <span
+                            class="badge badge-neutral"
+                            id="complianceCountBadge"
+                        >
+                            0 reviews
+                        </span>
+
+                    </div>
+
+
+                    <div class="filter-grid">
+
+                        <!-- Search -->
+
+                        <div class="form-group">
+
+                            <label
+                                class="form-label"
+                                for="complianceSearch"
+                            >
+                                Search
+                            </label>
+
+                            <div class="search-box">
+
+                                <i class="fa-solid fa-magnifying-glass"></i>
+
+                                <input
+                                    type="text"
+                                    id="complianceSearch"
+                                    placeholder="Search affiliate or campaign..."
+                                >
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- Status -->
+
+                        <div class="form-group">
+
+                            <label
+                                class="form-label"
+                                for="complianceStatusFilter"
+                            >
+                                Status
+                            </label>
+
+                            <select
+                                class="form-select"
+                                id="complianceStatusFilter"
+                            >
+
+                                <option value="all">
+                                    All Statuses
+                                </option>
+
+                                <option value="Approved">
+                                    Approved
+                                </option>
+
+                                <option value="Monitoring">
+                                    Monitoring
+                                </option>
+
+                                <option value="Action Required">
+                                    Action Required
+                                </option>
+
+                                <option value="Pending">
+                                    Pending
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <!-- Risk -->
+
+                        <div class="form-group">
+
+                            <label
+                                class="form-label"
+                                for="complianceRiskFilter"
+                            >
+                                Risk Level
+                            </label>
+
+                            <select
+                                class="form-select"
+                                id="complianceRiskFilter"
+                            >
+
+                                <option value="all">
+                                    All Risk Levels
+                                </option>
+
+                                <option value="Low">
+                                    Low
+                                </option>
+
+                                <option value="Medium">
+                                    Medium
+                                </option>
+
+                                <option value="High">
+                                    High
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <!-- Vertical -->
+
+                        <div class="form-group">
+
+                            <label
+                                class="form-label"
+                                for="complianceVerticalFilter"
+                            >
+                                Vertical
+                            </label>
+
+                            <select
+                                class="form-select"
+                                id="complianceVerticalFilter"
+                            >
+
+                                <option value="all">
+                                    All Verticals
+                                </option>
+
+                                <option value="Finance">
+                                    Finance
+                                </option>
+
+                                <option value="Insurance">
+                                    Insurance
+                                </option>
+
+                                <option value="Home Services">
+                                    Home Services
+                                </option>
+
+                                <option value="SaaS">
+                                    SaaS
+                                </option>
+
+                                <option value="Education">
+                                    Education
+                                </option>
+
+                            </select>
+
+                        </div>
+
+                        <!-- Actions -->
+
+                        <div class="filter-actions">
+
+                            <button
+                                class="btn btn-secondary"
+                                id="resetComplianceFilters"
+                                type="button"
+                            >
+                                <i class="fa-solid fa-rotate-left"></i>
+                                Reset
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- =========================
+                 COMPLIANCE TABLE
+            ========================== -->
+
+            <section class="content-section">
+
+                <div class="card">
+
+                    <div class="card-header">
+
+                        <div>
+
+                            <h3 class="card-title">
+                                Review Queue
+                            </h3>
+
+                            <p class="card-subtitle">
+                                Affiliate and campaign compliance review records.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="table-wrapper">
+
+                        <table class="data-table">
+
+                            <thead>
+
+                                <tr>
+
+                                    <th>Affiliate</th>
+
+                                    <th>Campaign</th>
+
+                                    <th>Vertical</th>
+
+                                    <th>Risk</th>
+
+                                    <th>Policy Checks</th>
+
+                                    <th>Status</th>
+
+                                    <th>Last Review</th>
+
+                                    <th>Actions</th>
+
+                                </tr>
+
+                            </thead>
+
+                            <tbody id="complianceTableBody">
+
+                                <!-- JavaScript renders rows here -->
+
+                            </tbody>
+
+                        </table>
+
+
+                        <div class="table-pagination">
+
+                            <div
+                                class="pagination-info"
+                                id="complianceResultCount"
+                            >
+                                0 reviews
+                            </div>
+
+                            <div class="pagination-buttons">
+
+                                <button
+                                    class="pagination-btn active"
+                                    type="button"
+                                >
+                                    1
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- =========================
+                 COMPLIANCE WORKFLOW
+            ========================== -->
+
+            <section class="content-section">
+
+                <div class="grid grid-3">
+
+                    <!-- Traffic Quality -->
+
+                    <div class="card">
+
+                        <div class="card-header">
+
+                            <div>
+
+                                <h3 class="card-title">
+                                    Traffic Quality
+                                </h3>
+
+                                <p class="card-subtitle">
+                                    Review traffic sources and promotional methods.
+                                </p>
+
+                            </div>
+
+                            <div class="icon-box">
+                                <i class="fa-solid fa-filter-circle-dollar"></i>
+                            </div>
+
+                        </div>
+
+                        <div class="performance-summary">
+
+                            <div class="performance-item">
+
+                                <div class="performance-item-label">
+                                    Source Checks
+                                </div>
+
+                                <div class="performance-item-value">
+                                    24
+                                </div>
+
+                            </div>
+
+                            <div class="performance-item">
+
+                                <div class="performance-item-label">
+                                    Passed
+                                </div>
+
+                                <div class="performance-item-value text-success">
+                                    21
+                                </div>
+
+                            </div>
+
+                            <div class="performance-item">
+
+                                <div class="performance-item-label">
+                                    Flagged
+                                </div>
+
+                                <div class="performance-item-value text-warning">
+                                    3
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Policy Review -->
+
+                    <div class="card">
+
+                        <div class="card-header">
+
+                            <div>
+
+                                <h3 class="card-title">
+                                    Policy Review
+                                </h3>
+
+                                <p class="card-subtitle">
+                                    Check promotional methods against offer rules.
+                                </p>
+
+                            </div>
+
+                            <div class="icon-box">
+                                <i class="fa-solid fa-file-shield"></i>
+                            </div>
+
+                        </div>
+
+                        <div class="performance-summary">
+
+                            <div class="performance-item">
+
+                                <div class="performance-item-label">
+                                    Policy Checks
+                                </div>
+
+                                <div class="performance-item-value">
+                                    32
+                                </div>
+
+                            </div>
+
+                            <div class="performance-item">
+
+                                <div class="performance-item-label">
+                                    Passed
+                                </div>
+
+                                <div class="performance-item-value text-success">
+                                    29
+                                </div>
+
+                            </div>
+
+                            <div class="performance-item">
+
+                                <div class="performance-item-label">
+                                    Exceptions
+                                </div>
+
+                                <div class="performance-item-value text-danger">
+                                    3
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Review Workflow -->
+
+                    <div class="card">
+
+                        <div class="card-header">
+
+                            <div>
+
+                                <h3 class="card-title">
+                                    Review Workflow
+                                </h3>
+
+                                <p class="card-subtitle">
+                                    Standard process for compliance follow-up.
+                                </p>
+
+                            </div>
+
+                            <div class="icon-box">
+                                <i class="fa-solid fa-list-check"></i>
+                            </div>
+
+                        </div>
+
+                        <div class="activity-list">
+
+                            <div class="activity-item">
+
+                                <div class="activity-icon">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </div>
+
+                                <div class="activity-content">
+
+                                    <div class="activity-title">
+                                        Review traffic source
+                                    </div>
+
+                                    <div class="activity-time">
+                                        Step 1
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="activity-item">
+
+                                <div class="activity-icon">
+                                    <i class="fa-solid fa-file-circle-check"></i>
+                                </div>
+
+                                <div class="activity-content">
+
+                                    <div class="activity-title">
+                                        Validate offer policy
+                                    </div>
+
+                                    <div class="activity-time">
+                                        Step 2
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="activity-item">
+
+                                <div class="activity-icon">
+                                    <i class="fa-solid fa-message"></i>
+                                </div>
+
+                                <div class="activity-content">
+
+                                    <div class="activity-title">
+                                        Follow up with affiliate
+                                    </div>
+
+                                    <div class="activity-time">
+                                        Step 3
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- =========================
+                 COMPLIANCE PRINCIPLES
+            ========================== -->
+
+            <section class="content-section">
+
+                <div class="card">
+
+                    <div class="card-header">
+
+                        <div>
+
+                            <h3 class="card-title">
+                                Compliance Principles
+                            </h3>
+
+                            <p class="card-subtitle">
+                                Example checks represented in this portfolio simulation.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="grid grid-2">
+
+                        <div class="alert alert-info">
+
+                            <i class="fa-solid fa-link"></i>
+
+                            <div>
+                                <strong>Traffic Source Validation</strong>
+                                <br>
+                                Verify that the affiliate uses approved traffic
+                                sources for each campaign.
+                            </div>
+
+                        </div>
+
+
+                        <div class="alert alert-success">
+
+                            <i class="fa-solid fa-check"></i>
+
+                            <div>
+                                <strong>Offer Policy Alignment</strong>
+                                <br>
+                                Check promotional activity against campaign-specific
+                                restrictions.
+                            </div>
+
+                        </div>
+
+
+                        <div class="alert alert-warning">
+
+                            <i class="fa-solid fa-triangle-exclamation"></i>
+
+                            <div>
+                                <strong>Risk Monitoring</strong>
+                                <br>
+                                Flag unusual traffic patterns or policy exceptions
+                                for further review.
+                            </div>
+
+                        </div>
+
+
+                        <div class="alert alert-danger">
+
+                            <i class="fa-solid fa-ban"></i>
+
+                            <div>
+                                <strong>Escalation</strong>
+                                <br>
+                                Escalate unresolved compliance issues according to
+                                the simulated workflow.
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </div>
+
+    </main>
+
+</div>
+
+
+<!-- Project JavaScript -->
+
+<script src="../assets/js/app.js"></script>
+<script src="../assets/js/compliance.js"></script>
+
+</body>
+</html>
